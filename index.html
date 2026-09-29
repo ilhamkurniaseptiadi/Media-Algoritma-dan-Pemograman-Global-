@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modul Algoritma & Pemrograman - RuangInformatika</title>
+  <link rel="shortcut icon" href="../images/Logo Patbhe.png" type="image/x-icon" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Inter", "sans-serif"],
+            mono: ["Fira Code", "ui-monospace", "Consolas", "monospace"],
+          },
+          colors: {
+            brandDark: "#0a0a0a",
+            brandGray: "#151515",
+            brandGreen: "#00e676",
+            textGray: "#d1d5db",
+          },
+          animation: {
+            "float": "float 6s ease-in-out infinite",
+            "fade-in-up": "fadeInUp 0.8s ease forwards",
+          },
+          keyframes: {
+            float: {
+              "0%, 100%": { transform: "translateY(0px)" },
+              "50%": { transform: "translateY(-10px)" },
+            },
+            fadeInUp: {
+              "0%": { opacity: "0", transform: "translateY(20px)" },
+              "100%": { opacity: "1", transform: "translateY(0)" },
+            },
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    .bg-grid {
+      background-size: 40px 40px;
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    }
+    .card-module {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .card-module::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), rgba(255, 255, 255, 0.08), transparent 40%);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      pointer-events: none;
+    }
+    .card-module:hover::before { opacity: 1; }
+    .card-module:hover { transform: translateY(-6px) scale(1.01); }
+    .step-line {
+      background: linear-gradient(to right, transparent, rgba(0, 230, 118, 0.5), transparent);
+    }
+    .text-gradient-green {
+      background: linear-gradient(135deg, #00e676 0%, #00b0ff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .orb {
+      position: absolute;
+      border-radius: 9999px;
+      filter: blur(80px);
+      pointer-events: none;
+      z-index: 0;
+    }
+    @media (max-width: 640px) { h1 { font-size: 2rem !important; } }
+    ::selection { background: rgba(0, 230, 118, 0.3); }
+  </style>
+</head>
+<body class="bg-brandDark text-white font-sans antialiased overflow-x-hidden flex flex-col min-h-screen">
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="w-full border-b border-white/5 backdrop-blur-md bg-brandDark/70 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-xl bg-brandGreen/15 border border-brandGreen/30 flex items-center justify-center">
+          <i class="fa-solid fa-code text-brandGreen text-base"></i>
+        </div>
+        <div class="leading-tight">
+          <p class="font-bold text-brandGreen tracking-tight text-base">RuangInformatika</p>
+          <p class="text-[10px] text-textGray uppercase tracking-widest font-semibold">Learning Platform</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="pilih-pertemuan.html" class="hidden md:flex items-center gap-2 text-sm text-textGray hover:text-brandGreen transition font-medium">
+          <i class="fa-solid fa-arrow-right-to-bracket"></i> Langsung Mulai
+        </a>
+        <span class="hidden md:inline-flex items-center gap-2 border border-brandGreen/20 bg-brandGreen/5 rounded-full px-4 py-2 text-xs font-bold text-brandGreen">
+          <i class="fa-solid fa-circle text-[6px] animate-pulse"></i> Kelas X
+        </span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="relative flex-grow bg-grid overflow-hidden">
+    <div class="orb w-[500px] h-[500px] bg-brandGreen/10 -top-40 -left-40"></div>
+    <div class="orb w-[400px] h-[400px] bg-sky-500/10 top-1/3 -right-40"></div>
+    <div class="orb w-[300px] h-[300px] bg-purple-500/10 bottom-0 left-1/3"></div>
+
+    <div class="relative z-10 max-w-6xl mx-auto px-6 pt-16 pb-12">
+
+      <div class="flex justify-center mb-6">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brandGreen/10 border border-brandGreen/25 text-xs font-bold text-brandGreen tracking-wide">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brandGreen opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-brandGreen"></span>
+          </span>
+          MODUL • INFORMATIKA FASE E
+        </div>
+      </div>
+
+      <h1 class="text-center text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight mb-6 animate-fade-in-up">
+        Algoritma &amp;<br />
+        <span class="text-gradient-green">Pemrograman Dasar</span>
+      </h1>
+
+      <p class="text-center text-textGray text-base md:text-lg max-w-2xl mx-auto leading-relaxed mb-10 animate-fade-in-up" style="animation-delay: 0.1s;">
+        Pelajari logika dasar komputer — mulai dari <strong class="text-white">Algoritma</strong>,
+        <strong class="text-white">Flowchart</strong>, <strong class="text-white">Pseudocode</strong>,
+        hingga mengeksekusinya dalam <strong class="text-brandGreen">Bahasa Python</strong>.
+      </p>
+
+      <div class="flex flex-wrap justify-center gap-3 mb-16 animate-fade-in-up" style="animation-delay: 0.2s;">
+        <a href="pilih-pertemuan.html"
+           class="group inline-flex items-center gap-3 px-7 py-3.5 bg-brandGreen text-black font-bold rounded-xl hover:bg-green-400 transition-all shadow-lg shadow-brandGreen/25 hover:shadow-brandGreen/40 hover:scale-[1.02]">
+          <i class="fa-solid fa-rocket group-hover:animate-float"></i> Pilih Pertemuan
+          <i class="fa-solid fa-arrow-right text-sm group-hover:translate-x-1 transition-transform"></i>
+        </a>
+        <a href="#alur"
+           class="inline-flex items-center gap-3 px-7 py-3.5 bg-white/5 border border-white/15 text-white font-semibold rounded-xl hover:bg-white/10 hover:border-white/30 transition">
+          <i class="fa-solid fa-route text-brandGreen"></i> Lihat Alur
+        </a>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-3xl mx-auto mb-6 animate-fade-in-up" style="animation-delay: 0.3s;">
+        <div class="bg-brandGray/60 backdrop-blur border border-white/10 rounded-2xl p-4 text-center">
+          <div class="text-2xl md:text-3xl font-extrabold text-brandGreen">4</div>
+          <div class="text-[10px] text-textGray uppercase tracking-wider font-bold mt-1">Pertemuan</div>
+        </div>
+        <div class="bg-brandGray/60 backdrop-blur border border-white/10 rounded-2xl p-4 text-center">
+          <div class="text-2xl md:text-3xl font-extrabold text-sky-400">7</div>
+          <div class="text-[10px] text-textGray uppercase tracking-wider font-bold mt-1">Tahap Belajar</div>
+        </div>
+        <div class="bg-brandGray/60 backdrop-blur border border-white/10 rounded-2xl p-4 text-center">
+          <div class="text-2xl md:text-3xl font-extrabold text-purple-400">13+</div>
+          <div class="text-[10px] text-textGray uppercase tracking-wider font-bold mt-1">Studi Kasus</div>
+        </div>
+        <div class="bg-brandGray/60 backdrop-blur border border-white/10 rounded-2xl p-4 text-center">
+          <div class="text-2xl md:text-3xl font-extrabold text-amber-400">10</div>
+          <div class="text-[10px] text-textGray uppercase tracking-wider font-bold mt-1">Soal Evaluasi</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ALUR BELAJAR ==================== -->
+  <section id="alur" class="relative z-10 max-w-6xl mx-auto px-6 py-12">
+
+    <div class="text-center mb-10">
+      <div class="inline-flex items-center gap-2 text-xs font-bold text-brandGreen bg-brandGreen/10 border border-brandGreen/25 rounded-full px-4 py-1.5 mb-4 uppercase tracking-widest">
+        <i class="fa-solid fa-list-check"></i> Alur Pengerjaan
+      </div>
+      <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-3">4 Pertemuan dalam Modul Ini</h2>
+      <p class="text-textGray text-sm md:text-base max-w-xl mx-auto">Setiap pertemuan punya 7 tahap belajar: Pre-Test, Materi, Video, Simulasi, LKPD, Post-Test, Refleksi.</p>
+    </div>
+
+    <div class="hidden md:flex items-center justify-center gap-2 mb-10">
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-full bg-brandGreen/20 border-2 border-brandGreen flex items-center justify-center text-xs font-bold text-brandGreen">1</div>
+        <div class="w-16 h-[2px] step-line"></div>
+      </div>
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-full bg-white/5 border-2 border-white/15 flex items-center justify-center text-xs font-bold text-textGray">2</div>
+        <div class="w-16 h-[2px] step-line"></div>
+      </div>
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-full bg-white/5 border-2 border-white/15 flex items-center justify-center text-xs font-bold text-textGray">3</div>
+        <div class="w-16 h-[2px] step-line"></div>
+      </div>
+      <div class="w-8 h-8 rounded-full bg-white/5 border-2 border-white/15 flex items-center justify-center text-xs font-bold text-textGray">4</div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+      <!-- CARD 1: PERTEMUAN 1 -->
+      <a href="pertemuan-1.html" class="card-module group block bg-gradient-to-br from-brandGreen/10 via-brandGray to-brandGray border border-brandGreen/25 rounded-3xl p-6 md:p-7 hover:border-brandGreen/60">
+        <div class="flex items-start justify-between mb-4">
+          <div class="w-14 h-14 rounded-2xl bg-brandGreen/15 border border-brandGreen/40 flex items-center justify-center">
+            <i class="fa-solid fa-book-open-reader text-brandGreen text-2xl"></i>
+          </div>
+          <div class="flex flex-col items-end gap-1">
+            <span class="text-[10px] font-bold text-brandGreen bg-brandGreen/15 border border-brandGreen/30 px-3 py-1 rounded-full uppercase tracking-widest">Pertemuan 1</span>
+            <span class="text-[10px] font-mono text-textGray">2 JP</span>
+          </div>
+        </div>
+        <h3 class="text-xl md:text-2xl font-bold text-white mb-2">Konsep Dasar &amp; Flowchart</h3>
+        <p class="text-xs text-brandGreen font-bold uppercase tracking-wider mb-3">Materi + Latihan + Evaluasi</p>
+        <p class="text-sm text-textGray leading-relaxed mb-5">
+          Pengenalan <strong class="text-white">Algoritma</strong>, <strong class="text-white">Notasi Deskriptif</strong>, dan <strong class="text-white">Flowchart</strong> (linier, percabangan, perulangan) dengan 5 studi kasus kontekstual.
+        </p>
+        <div class="flex flex-wrap gap-2 mb-5">
+          <span class="text-[10px] font-bold bg-white/5 border border-white/10 text-textGray px-2.5 py-1 rounded-full"><i class="fa-solid fa-clipboard-question mr-1 text-amber-400"></i>Pre-Test</span>
+          <span class="text-[10px] font-bold bg-white/5 border border-white/10 text-textGray px-2.5 py-1 rounded-full"><i class="fa-solid fa-gamepad mr-1 text-sky-400"></i>Simulasi</span>
+          <span class="text-[10px] font-bold bg-white/5 border border-white/10 text-textGray px-2.5 py-1 rounded-full"><i class="fa-solid fa-diagram-project mr-1 text-purple-400"></i>Flowchart</span>
+        </div>
+        <div class="flex items-center gap-2 text-sm font-bold text-brandGreen group-hover:gap-4 transition-all">
+          Mulai Pertemuan 1 <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </a>
+
+      <!-- CARD 2: PERTEMUAN 2 -->
+      <a href="pertemuan-2.html" class="card-module group block bg-gradient-to-br from-sky-500/10 via-brandGray to-brandGray border border-sky-500/25 rounded-3xl p-6 md:p-7 hover:border-sky-500/60">
+        <div class="flex items-start justify-between mb-4">
+          <div class="w-14 h-14 rounded-2xl bg-sky-500/15 border border-sky-500/40 flex items-center justify-center">
+            <i class="fa-solid fa-file-code text-sky-400 text-2xl"></i>
+          </div>
+          <div class="flex flex-col items-end gap-1">
+            <span class="text-[10px] font-bold text-sky-400 bg-sky-500/15 border border-sky-500/30 px-3 py-1 rounded-full uppercase tracking-widest">Pertemuan 2</span>
+            <span class="text-[10px] font-mono text-textGray">2 JP</span>
+          </div>
+        </div>
+        <h3 class="text-xl md:text-2xl font-bold text-white mb-2">Pseudocode &amp; Python</h3>
+        <p class="text-xs text-sky-400 font-bold uppercase tracking-wider mb-3">Materi + Latihan + Evaluasi</p>
+        <p class="text-sm text-textGray leading-relaxed mb-5">
+          Penulisan <strong class="text-white">Pseudocode</strong> (if-else, for, while) dan pengenalan <strong class="text-white">Bahasa Python</strong>. Simulator langkah-demi-langkah untuk memahami loop.
+        </p>
+        <div class="flex flex-wrap gap-2 mb-5">
+          <span class="text-[10px] font-bold bg-white/5 border border-white/10 text-textGray px-2.5 py-1 rounded-full"><i class="fa-solid fa-clipboard-question mr-1 text-amber-400"></i>Pre-Test</span>
+          <span class="text-[10px] font-bold bg-white/5 border border-white/10 text-textGray px-2.5 py-1 rounded-full"><i class="fa-solid fa-bolt mr-1 text-sky-400"></i>Simulator</span>
+          <span class="text-[10px] font-bold bg-white/5 border border-white/10 text-textGray px-2.5 py-1 rounded-full"><i class="fa-brands fa-python mr-1 text-[#FFD43B]"></i>Python</span>
+        </div>
+        <div class="flex items-center gap-2 text-sm font-bold text-sky-400 group-hover:gap-4 transition-all">
+          Mulai Pertemuan 2 <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </a>
+
+      <!-- CARD 3: PERTEMUAN 3 -->
+      <div class="card-module block bg-gradient-to-br from-purple-500/5 via-brandGray to-brandGray border border-purple-500/15 rounded-3xl p-6 md:p-7 opacity-70">
+        <div class="flex items-start justify-between mb-4">
+          <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center">
+            <i class="fa-solid fa-scale-balanced text-purple-400/60 text-2xl"></i>
+          </div>
+          <div class="flex flex-col items-end gap-1">
+            <span class="text-[10px] font-bold text-purple-400/70 bg-purple-500/10 border border-purple-500/20 px-3 py-1 rounded-full uppercase tracking-widest">
+              <i class="fa-solid fa-lock text-[8px] mr-1"></i> Segera
+            </span>
+            <span class="text-[10px] font-mono text-textGray">2 JP</span>
+          </div>
+        </div>
+        <h3 class="text-xl md:text-2xl font-bold text-white/70 mb-2">Kriteria Perbandingan</h3>
+        <p class="text-xs text-purple-400/70 font-bold uppercase tracking-wider mb-3">Kecepatan • Memori • Implementasi</p>
+        <p class="text-sm text-textGray leading-relaxed mb-5">
+          Membandingkan algoritma berdasarkan kecepatan, penggunaan memori, dan kemudahan implementasi.
+        </p>
+        <div class="flex items-center gap-2 text-sm font-bold text-textGray/60">
+          <i class="fa-solid fa-lock"></i> Belum tersedia
+        </div>
+      </div>
+
+      <!-- CARD 4: PERTEMUAN 4 -->
+      <div class="card-module block bg-gradient-to-br from-amber-500/5 via-brandGray to-brandGray border border-amber-500/15 rounded-3xl p-6 md:p-7 opacity-70">
+        <div class="flex items-start justify-between mb-4">
+          <div class="w-14 h-14 rounded-2xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center">
+            <i class="fa-solid fa-magnifying-glass-chart text-amber-400/60 text-2xl"></i>
+          </div>
+          <div class="flex flex-col items-end gap-1">
+            <span class="text-[10px] font-bold text-amber-400/70 bg-amber-500/10 border border-amber-500/20 px-3 py-1 rounded-full uppercase tracking-widest">
+              <i class="fa-solid fa-lock text-[8px] mr-1"></i> Segera
+            </span>
+            <span class="text-[10px] font-mono text-textGray">2 JP</span>
+          </div>
+        </div>
+        <h3 class="text-xl md:text-2xl font-bold text-white/70 mb-2">Jenis Algoritma</h3>
+        <p class="text-xs text-amber-400/70 font-bold uppercase tracking-wider mb-3">Searching &amp; Sorting</p>
+        <p class="text-sm text-textGray leading-relaxed mb-5">
+          Algoritma pencarian (linear, binary) dan pengurutan (bubble sort, selection sort).
+        </p>
+        <div class="flex items-center gap-2 text-sm font-bold text-textGray/60">
+          <i class="fa-solid fa-lock"></i> Belum tersedia
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CTA SECTION ==================== -->
+  <section class="relative z-10 max-w-6xl mx-auto px-6 py-10">
+    <div class="bg-gradient-to-br from-brandGreen/15 via-brandGray to-brandGray border border-brandGreen/30 rounded-3xl p-8 md:p-10 text-center relative overflow-hidden">
+      <div class="orb w-[300px] h-[300px] bg-brandGreen/20 -top-20 -right-20"></div>
+      <div class="relative z-10">
+        <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-brandGreen/15 border border-brandGreen/30 mb-4">
+          <i class="fa-solid fa-trophy text-brandGreen text-3xl"></i>
+        </div>
+        <h3 class="text-2xl md:text-3xl font-extrabold mb-3">Siap Memulai Perjalanan Belajarmu?</h3>
+        <p class="text-textGray text-sm md:text-base max-w-xl mx-auto mb-6 leading-relaxed">
+          Semua nilai (Pre-Test, LKPD, Post-Test, Refleksi) akan otomatis tersimpan dan dapat dilihat oleh gurumu.
+        </p>
+        <a href="pilih-pertemuan.html"
+           class="inline-flex items-center gap-3 px-8 py-4 bg-brandGreen text-black font-bold rounded-xl hover:bg-green-400 transition-all shadow-lg shadow-brandGreen/30 hover:scale-[1.02]">
+          <i class="fa-solid fa-rocket"></i> Pilih Pertemuan
+          <i class="fa-solid fa-arrow-right text-sm"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="border-t border-white/5 bg-[#080808] mt-auto">
+    <div class="max-w-6xl mx-auto px-6 py-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-lg bg-brandGreen/15 border border-brandGreen/30 flex items-center justify-center">
+            <i class="fa-solid fa-code text-brandGreen text-sm"></i>
+          </div>
+          <div class="leading-tight">
+            <p class="font-bold text-brandGreen text-sm">RuangInformatika</p>
+            <p class="text-[10px] text-textGray">Platform e-learning interaktif</p>
+          </div>
+        </div>
+        <p class="text-xs text-textGray text-center">© 2026 RuangInformatika • Dikembangkan untuk Informatika SMA/SMK</p>
+        <div class="flex gap-3 text-lg">
+          <a href="https://github.com/fandhi19" class="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-textGray hover:text-brandGreen hover:border-brandGreen/40 transition"><i class="fa-brands fa-github"></i></a>
+          <a href="https://e-portofolio-fandhi.vercel.app/" class="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-textGray hover:text-brandGreen hover:border-brandGreen/40 transition"><i class="fa-solid fa-globe"></i></a>
+          <a href="https://www.instagram.com/fandhidk17/" class="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-textGray hover:text-brandGreen hover:border-brandGreen/40 transition"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll(".card-module").forEach((card) => {
+      card.addEventListener("mousemove", (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = ((e.clientX - rect.left) / rect.width) * 100;
+        const y = ((e.clientY - rect.top) / rect.height) * 100;
+        card.style.setProperty("--x", x + "%");
+        card.style.setProperty("--y", y + "%");
+      });
+    });
+  </script>
+</body>
+</html>
