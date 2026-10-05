@@ -54,7 +54,7 @@ tailwind.config = { theme: { extend: {
 .option-label.review-wrong{background:rgba(244,63,94,.1)!important;border-color:rgba(244,63,94,.5)!important}
 .option-label.review-wrong .opt-marker{background:#f43f5e;border-color:#f43f5e;color:#fff}
 .progress-fill{transition:width .4s}
-#playground-canvas,#playground-lkpd{background-image:radial-gradient(circle,rgba(255,255,255,.08) 1px,transparent 1px);background-size:24px 24px;touch-action:none}
+#playground-canvas,#playground-lkpd,#playground-lkpd2{background-image:radial-gradient(circle,rgba(255,255,255,.08) 1px,transparent 1px);background-size:24px 24px;touch-action:none}
 .flowchart-symbol{position:absolute;display:flex;align-items:center;justify-content:center;cursor:grab;user-select:none;background:rgba(10,10,10,.85);padding:8px 18px;font-weight:600;font-size:13px;min-width:90px;min-height:42px;transition:box-shadow .15s;touch-action:none;z-index:10;text-align:center;line-height:1.3}
 .flowchart-symbol.selected{box-shadow:0 0 0 3px rgba(0,230,118,.45),0 0 24px rgba(0,230,118,.35)}
 .flowchart-symbol .symbol-label{outline:none;white-space:pre-wrap;pointer-events:auto}
@@ -198,7 +198,6 @@ tailwind.config = { theme: { extend: {
       <!-- SUB 1: KONSEP DASAR -->
       <div id="m-konsep" class="subtab-panel active">
         <div class="bg-brandGray border border-white/10 rounded-2xl p-6 space-y-6">
-          <!-- Tujuan Pembelajaran -->
           <div class="bg-brandGreen/5 border border-brandGreen/25 rounded-xl p-5">
             <h3 class="font-bold text-brandGreen mb-3 flex items-center gap-2"><i class="fa-solid fa-bullseye"></i> Tujuan Pembelajaran</h3>
             <ol class="text-sm text-textGray space-y-1.5 pl-5 list-decimal">
@@ -209,10 +208,8 @@ tailwind.config = { theme: { extend: {
               <li>Mengubah algoritma sederhana ke dalam bentuk flowchart.</li>
             </ol>
           </div>
-
           <h2 class="text-2xl font-bold flex items-center gap-2"><i class="fa-solid fa-cube text-brandGreen"></i> 1. Konsep Dasar Algoritma</h2>
           <p class="text-textGray leading-relaxed">Secara sederhana, <strong class="text-white">algoritma</strong> adalah urutan langkah-langkah yang logis dan sistematis untuk menyelesaikan suatu masalah atau mencapai tujuan tertentu.</p>
-
           <div class="bg-black/40 border border-brandGreen/20 rounded-xl p-5 space-y-3">
             <h3 class="font-bold text-brandGreen"><i class="fa-solid fa-paper-plane mr-2"></i>Contoh: Mengirim Tugas via Platform</h3>
             <p class="text-sm text-textGray">Misalnya, kamu ingin mengirim tugas kepada guru melalui platform pembelajaran. Kamu mungkin melakukan langkah-langkah berikut:</p>
@@ -227,7 +224,6 @@ tailwind.config = { theme: { extend: {
             </ol>
             <p class="text-xs text-amber-300 italic">💡 Langkah-langkah tersebut dilakukan berurutan untuk mencapai satu tujuan: mengirimkan tugas. Algoritma tidak hanya digunakan komputer — dalam kehidupan sehari-hari kita juga sering menggunakannya tanpa menyadarinya.</p>
           </div>
-
           <div class="bg-sky-500/5 border border-sky-500/25 rounded-xl p-5">
             <h3 class="font-bold text-sky-400 mb-3"><i class="fa-solid fa-arrow-right-arrow-left mr-2"></i>Unsur Dasar Algoritma</h3>
             <p class="text-sm text-textGray mb-4">Cara paling mudah memahami algoritma adalah dengan melihat tiga bagian utama:</p>
@@ -253,7 +249,6 @@ tailwind.config = { theme: { extend: {
               <li><strong class="text-purple-400">Output</strong> — hasil yang diperoleh setelah proses dilakukan.</li>
             </ul>
           </div>
-
           <div>
             <h3 class="font-bold text-white mb-3 flex items-center gap-2"><i class="fa-solid fa-1 text-brandGreen"></i> Contoh 1 — Menentukan Kelulusan</h3>
             <div class="bg-white/5 border border-white/10 rounded-xl p-5 space-y-3">
@@ -265,7 +260,6 @@ tailwind.config = { theme: { extend: {
               </div>
             </div>
           </div>
-
           <div>
             <h3 class="font-bold text-white mb-3 flex items-center gap-2"><i class="fa-solid fa-2 text-brandGreen"></i> Contoh 2 — Menghitung Nilai Rata-rata</h3>
             <div class="bg-white/5 border border-white/10 rounded-xl p-5 space-y-3">
@@ -289,7 +283,6 @@ tailwind.config = { theme: { extend: {
               </div>
             </div>
           </div>
-
           <div class="bg-brandGreen/5 border border-brandGreen/25 rounded-xl p-5">
             <h3 class="font-bold text-brandGreen mb-3"><i class="fa-solid fa-star mr-2"></i>Karakteristik Algoritma yang Baik</h3>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -307,7 +300,6 @@ tailwind.config = { theme: { extend: {
       <div id="m-notasi" class="subtab-panel">
         <div class="bg-brandGray border border-white/10 rounded-2xl p-6 space-y-6">
           <h2 class="text-2xl font-bold flex items-center gap-2"><i class="fa-solid fa-code-branch text-cyan-400"></i> 2. Notasi Algoritma</h2>
-          
           <div>
             <h3 class="font-bold text-cyan-400 mb-2">Apa itu notasi?</h3>
             <p class="text-textGray leading-relaxed"><strong class="text-white">Notasi</strong> adalah cara untuk menuliskan atau menggambarkan suatu informasi agar dapat dipahami dengan jelas dan terstruktur.</p>
@@ -316,7 +308,6 @@ tailwind.config = { theme: { extend: {
               <p class="text-center text-cyan-300 font-bold">Notasi = cara menuliskan atau menggambarkan algoritma.</p>
             </div>
           </div>
-
           <div>
             <h3 class="font-bold text-cyan-400 mb-2">Mengapa algoritma perlu dibuat dalam bentuk notasi?</h3>
             <p class="text-textGray">Algoritma sebenarnya bisa saja hanya disampaikan secara lisan. Namun, cara tersebut kurang efektif jika algoritmanya mulai panjang atau memiliki banyak kondisi.</p>
@@ -328,7 +319,6 @@ tailwind.config = { theme: { extend: {
               <div class="bg-white/5 border border-white/10 rounded-xl p-3 text-center"><i class="fa-solid fa-gears text-cyan-400 text-2xl mb-1"></i><p class="font-bold text-white text-sm">Diterapkan</p></div>
             </div>
           </div>
-
           <div>
             <h3 class="font-bold text-white mb-3">Notasi yang akan kita pelajari:</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -344,7 +334,6 @@ tailwind.config = { theme: { extend: {
               </div>
             </div>
           </div>
-
           <div class="bg-sky-500/5 border border-sky-500/25 rounded-xl p-4">
             <p class="text-sm text-sky-300"><i class="fa-solid fa-lightbulb mr-2"></i><strong>Catatan:</strong> Notasi <em>Pseudocode</em> akan kamu pelajari di <strong>Pertemuan 2</strong>. Untuk Pertemuan 1, kita fokus pada <strong>Notasi Deskriptif</strong> dan <strong>Flowchart</strong>.</p>
           </div>
@@ -355,10 +344,8 @@ tailwind.config = { theme: { extend: {
       <div id="m-deskriptif" class="subtab-panel">
         <div class="bg-brandGray border border-white/10 rounded-2xl p-6 space-y-6">
           <h2 class="text-2xl font-bold flex items-center gap-2"><i class="fa-solid fa-align-left text-emerald-400"></i> a. Notasi Deskriptif</h2>
-          
           <p class="text-textGray leading-relaxed"><strong class="text-white">Notasi deskriptif</strong> adalah cara menuliskan algoritma menggunakan kalimat sederhana untuk menjelaskan langkah-langkah penyelesaian suatu masalah secara berurutan.</p>
           <p class="text-textGray leading-relaxed">Notasi ini tidak menggunakan aturan bahasa pemrograman. Kita cukup menuliskan apa yang harus dilakukan, secara berurutan dan jelas.</p>
-
           <div class="border-t border-white/10 pt-5">
             <h3 class="font-bold text-emerald-400 mb-3 flex items-center gap-2"><i class="fa-solid fa-1"></i> Contoh 1 — Menghitung Nilai Rata-rata</h3>
             <p class="text-sm text-textGray mb-3">SMA 9 telah selesai menyelenggarakan ASTS, dan guru KKA ingin mengetahui rata-rata nilai KKA kelas X.</p>
@@ -391,7 +378,6 @@ tailwind.config = { theme: { extend: {
               </ol>
             </div>
           </div>
-
           <div class="border-t border-white/10 pt-5">
             <h3 class="font-bold text-emerald-400 mb-3 flex items-center gap-2"><i class="fa-solid fa-2"></i> Contoh 2 — Menentukan Kelulusan</h3>
             <p class="text-sm text-textGray mb-3">Raka baru saja menerima nilai ASTS KKA sebesar 82. Guru menetapkan bahwa siswa dinyatakan lulus jika mendapatkan nilai minimal 75. Raka ingin mengetahui apakah ia lulus.</p>
@@ -419,7 +405,6 @@ tailwind.config = { theme: { extend: {
       <div id="m-flowchart" class="subtab-panel">
         <div class="bg-brandGray border border-white/10 rounded-2xl p-6 space-y-6">
           <h2 class="text-2xl font-bold flex items-center gap-2"><i class="fa-solid fa-project-diagram text-sky-400"></i> b. Flowchart</h2>
-          
           <div>
             <h3 class="font-bold text-sky-400 mb-2">Apa itu flowchart?</h3>
             <p class="text-textGray leading-relaxed"><strong class="text-white">Flowchart</strong> adalah bentuk penyajian algoritma menggunakan simbol-simbol dan garis alur untuk menggambarkan urutan langkah dalam menyelesaikan suatu masalah.</p>
@@ -427,7 +412,6 @@ tailwind.config = { theme: { extend: {
               <p class="text-center text-sky-300 font-bold">Flowchart = algoritma yang digambarkan dalam bentuk diagram.</p>
             </div>
           </div>
-
           <div>
             <h3 class="font-bold text-sky-400 mb-3">Mengapa menggunakan flowchart?</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
@@ -440,7 +424,6 @@ tailwind.config = { theme: { extend: {
             </div>
             <p class="text-xs text-amber-300 italic mt-3">💡 Flowchart bukan sekadar gambar agar terlihat menarik. Flowchart membantu kita berpikir dan melihat bagaimana masalah diselesaikan langkah demi langkah.</p>
           </div>
-
           <div>
             <h3 class="font-bold text-white mb-3">Simbol Standar Flowchart</h3>
             <div class="overflow-x-auto border border-white/10 rounded-xl">
@@ -458,27 +441,24 @@ tailwind.config = { theme: { extend: {
               </table>
             </div>
           </div>
-
           <h3 class="text-xl font-bold text-white pt-3">Struktur Dasar Alur Flowchart</h3>
-
-          <!-- 1. Linier -->
           <div>
             <h4 class="font-bold text-brandGreen mb-2 flex items-center gap-2"><i class="fa-solid fa-1"></i> Linier (Sequence)</h4>
             <p class="text-sm text-textGray mb-3">Flowchart yang langkah-langkahnya berjalan berurutan dari awal sampai akhir, tanpa percabangan atau pengulangan. Setiap langkah dilakukan satu kali dan berurutan.</p>
             <div class="bg-black/40 rounded-xl p-5 mb-2">
-  <p class="text-xs font-bold text-brandGreen uppercase mb-4">Pola Sederhana:</p>
-  <div class="flex flex-wrap items-center justify-center gap-2">
-    <div class="px-4 py-2 rounded-full border-2 border-brandGreen text-brandGreen font-bold text-xs">Mulai</div>
-    <i class="fa-solid fa-arrow-right text-brandGreen"></i>
-    <div class="px-4 py-2 rounded-lg border-2 border-amber-400 text-amber-400 font-bold text-xs">Langkah 1</div>
-    <i class="fa-solid fa-arrow-right text-brandGreen"></i>
-    <div class="px-4 py-2 rounded-lg border-2 border-amber-400 text-amber-400 font-bold text-xs">Langkah 2</div>
-    <i class="fa-solid fa-arrow-right text-brandGreen"></i>
-    <div class="px-4 py-2 rounded-lg border-2 border-amber-400 text-amber-400 font-bold text-xs">Langkah 3</div>
-    <i class="fa-solid fa-arrow-right text-brandGreen"></i>
-    <div class="px-4 py-2 rounded-full border-2 border-brandGreen text-brandGreen font-bold text-xs">Selesai</div>
-  </div>
-</div>
+              <p class="text-xs font-bold text-brandGreen uppercase mb-4">Pola Sederhana:</p>
+              <div class="flex flex-wrap items-center justify-center gap-2">
+                <div class="px-4 py-2 rounded-full border-2 border-brandGreen text-brandGreen font-bold text-xs">Mulai</div>
+                <i class="fa-solid fa-arrow-right text-brandGreen"></i>
+                <div class="px-4 py-2 rounded-lg border-2 border-amber-400 text-amber-400 font-bold text-xs">Langkah 1</div>
+                <i class="fa-solid fa-arrow-right text-brandGreen"></i>
+                <div class="px-4 py-2 rounded-lg border-2 border-amber-400 text-amber-400 font-bold text-xs">Langkah 2</div>
+                <i class="fa-solid fa-arrow-right text-brandGreen"></i>
+                <div class="px-4 py-2 rounded-lg border-2 border-amber-400 text-amber-400 font-bold text-xs">Langkah 3</div>
+                <i class="fa-solid fa-arrow-right text-brandGreen"></i>
+                <div class="px-4 py-2 rounded-full border-2 border-brandGreen text-brandGreen font-bold text-xs">Selesai</div>
+              </div>
+            </div>
             <p class="text-xs font-bold text-brandGreen uppercase mb-2">Contoh: Menghitung Rata-rata Nilai</p>
             <div class="bg-black/40 rounded-xl p-5 flex justify-center overflow-x-auto">
               <div class="flex flex-col items-center gap-2">
@@ -495,43 +475,26 @@ tailwind.config = { theme: { extend: {
                 <div class="fc-node fc-oval">SELESAI</div>
               </div>
             </div>
-
-                      <!-- 2. Percabangan -->
+          </div>
           <div>
             <h4 class="font-bold text-amber-400 mb-2 flex items-center gap-2"><i class="fa-solid fa-2"></i> Percabangan (Branching)</h4>
             <p class="text-sm text-textGray mb-3">Flowchart yang memiliki kondisi sehingga alurnya dapat memilih satu dari beberapa kemungkinan berdasarkan hasil suatu keputusan. Biasanya menggunakan simbol <strong class="text-amber-400">Decision (◇)</strong>.</p>
             <div class="bg-black/40 rounded-xl p-5 mb-2">
-  <p class="text-xs font-bold text-amber-400 uppercase mb-4">Pola Sederhana:</p>
-  <div class="flex flex-col items-center gap-3">
-    <!-- Decision -->
-    <div class="px-4 py-2 rounded-lg border-2 border-rose-400 text-rose-400 font-bold text-xs">
-      <i class="fa-solid fa-code-branch mr-1"></i> Kondisi?
-    </div>
-    <!-- Split arrows -->
-    <div class="flex gap-24 md:gap-40">
-      <div class="flex flex-col items-center">
-        <i class="fa-solid fa-arrow-down text-brandGreen"></i>
-        <span class="text-brandGreen font-bold text-[10px] mt-1">Ya</span>
-      </div>
-      <div class="flex flex-col items-center">
-        <i class="fa-solid fa-arrow-down text-rose-400"></i>
-        <span class="text-rose-400 font-bold text-[10px] mt-1">Tidak</span>
-      </div>
-    </div>
-    <!-- Two processes -->
-    <div class="flex gap-6 md:gap-12">
-      <div class="px-3 py-2 rounded-lg border-2 border-brandGreen text-brandGreen font-bold text-xs">Proses A</div>
-      <div class="px-3 py-2 rounded-lg border-2 border-rose-400 text-rose-400 font-bold text-xs">Proses B</div>
-    </div>
-    <!-- Merge arrows -->
-    <div class="flex gap-6 md:gap-12">
-      <i class="fa-solid fa-arrow-down text-brandGreen text-xs"></i>
-      <i class="fa-solid fa-arrow-down text-rose-400 text-xs"></i>
-    </div>
-    <!-- End -->
-    <div class="px-4 py-2 rounded-full border-2 border-brandGreen text-brandGreen font-bold text-xs">Selesai</div>
-  </div>
-</div>
+              <p class="text-xs font-bold text-amber-400 uppercase mb-4">Pola Sederhana:</p>
+              <div class="flex flex-col items-center gap-3">
+                <div class="px-4 py-2 rounded-lg border-2 border-rose-400 text-rose-400 font-bold text-xs"><i class="fa-solid fa-code-branch mr-1"></i> Kondisi?</div>
+                <div class="flex gap-24 md:gap-40">
+                  <div class="flex flex-col items-center"><i class="fa-solid fa-arrow-down text-brandGreen"></i><span class="text-brandGreen font-bold text-[10px] mt-1">Ya</span></div>
+                  <div class="flex flex-col items-center"><i class="fa-solid fa-arrow-down text-rose-400"></i><span class="text-rose-400 font-bold text-[10px] mt-1">Tidak</span></div>
+                </div>
+                <div class="flex gap-6 md:gap-12">
+                  <div class="px-3 py-2 rounded-lg border-2 border-brandGreen text-brandGreen font-bold text-xs">Proses A</div>
+                  <div class="px-3 py-2 rounded-lg border-2 border-rose-400 text-rose-400 font-bold text-xs">Proses B</div>
+                </div>
+                <div class="flex gap-6 md:gap-12"><i class="fa-solid fa-arrow-down text-brandGreen text-xs"></i><i class="fa-solid fa-arrow-down text-rose-400 text-xs"></i></div>
+                <div class="px-4 py-2 rounded-full border-2 border-brandGreen text-brandGreen font-bold text-xs">Selesai</div>
+              </div>
+            </div>
             <p class="text-xs font-bold text-amber-400 uppercase mb-2">Contoh: Menentukan Kelulusan Raka</p>
             <div class="bg-black/40 rounded-xl p-5 flex justify-center overflow-x-auto">
               <div class="flex flex-col items-center gap-2">
@@ -557,46 +520,30 @@ tailwind.config = { theme: { extend: {
               </div>
             </div>
           </div>
-
-          <!-- 3. Perulangan -->
           <div>
             <h4 class="font-bold text-purple-400 mb-2 flex items-center gap-2"><i class="fa-solid fa-3"></i> Perulangan (Looping)</h4>
             <p class="text-sm text-textGray mb-3">Flowchart yang memiliki langkah yang dilakukan berulang kali selama kondisi tertentu masih terpenuhi. Berbeda dengan percabangan, pada perulangan terdapat alur yang kembali ke langkah sebelumnya.</p>
             <div class="bg-black/40 rounded-xl p-5 mb-2">
-  <p class="text-xs font-bold text-purple-400 uppercase mb-4">Pola Sederhana:</p>
-  <div class="flex flex-col items-center gap-3">
-    <div class="px-4 py-2 rounded-full border-2 border-brandGreen text-brandGreen font-bold text-xs">Mulai</div>
-    <i class="fa-solid fa-arrow-down text-brandGreen"></i>
-    <div class="px-4 py-2 rounded-lg border-2 border-amber-400 text-amber-400 font-bold text-xs">Proses</div>
-    <i class="fa-solid fa-arrow-down text-brandGreen"></i>
-    <div class="px-4 py-2 rounded-lg border-2 border-rose-400 text-rose-400 font-bold text-xs">
-      <i class="fa-solid fa-code-branch mr-1"></i> Kondisi?
-    </div>
-    <!-- Split -->
-    <div class="flex gap-24 md:gap-32">
-      <div class="flex flex-col items-center">
-        <i class="fa-solid fa-arrow-down text-brandGreen"></i>
-        <span class="text-brandGreen font-bold text-[10px] mt-1">Ya</span>
-      </div>
-      <div class="flex flex-col items-center">
-        <i class="fa-solid fa-arrow-down text-rose-400"></i>
-        <span class="text-rose-400 font-bold text-[10px] mt-1">Tidak</span>
-      </div>
-    </div>
-    <!-- Two outputs -->
-    <div class="flex gap-6 md:gap-16 items-start">
-      <div class="flex flex-col items-center gap-1">
-        <div class="px-3 py-2 rounded-lg border-2 border-purple-400 text-purple-400 font-bold text-xs">
-          <i class="fa-solid fa-rotate mr-1"></i> Ulangi
-        </div>
-        <div class="text-purple-400 text-[10px] italic flex items-center gap-1">
-          <i class="fa-solid fa-arrow-turn-up rotate-90"></i> kembali ke Proses
-        </div>
-      </div>
-      <div class="px-3 py-2 rounded-full border-2 border-brandGreen text-brandGreen font-bold text-xs">Selesai</div>
-    </div>
-  </div>
-</div>
+              <p class="text-xs font-bold text-purple-400 uppercase mb-4">Pola Sederhana:</p>
+              <div class="flex flex-col items-center gap-3">
+                <div class="px-4 py-2 rounded-full border-2 border-brandGreen text-brandGreen font-bold text-xs">Mulai</div>
+                <i class="fa-solid fa-arrow-down text-brandGreen"></i>
+                <div class="px-4 py-2 rounded-lg border-2 border-amber-400 text-amber-400 font-bold text-xs">Proses</div>
+                <i class="fa-solid fa-arrow-down text-brandGreen"></i>
+                <div class="px-4 py-2 rounded-lg border-2 border-rose-400 text-rose-400 font-bold text-xs"><i class="fa-solid fa-code-branch mr-1"></i> Kondisi?</div>
+                <div class="flex gap-24 md:gap-32">
+                  <div class="flex flex-col items-center"><i class="fa-solid fa-arrow-down text-brandGreen"></i><span class="text-brandGreen font-bold text-[10px] mt-1">Ya</span></div>
+                  <div class="flex flex-col items-center"><i class="fa-solid fa-arrow-down text-rose-400"></i><span class="text-rose-400 font-bold text-[10px] mt-1">Tidak</span></div>
+                </div>
+                <div class="flex gap-6 md:gap-16 items-start">
+                  <div class="flex flex-col items-center gap-1">
+                    <div class="px-3 py-2 rounded-lg border-2 border-purple-400 text-purple-400 font-bold text-xs"><i class="fa-solid fa-rotate mr-1"></i> Ulangi</div>
+                    <div class="text-purple-400 text-[10px] italic flex items-center gap-1"><i class="fa-solid fa-arrow-turn-up rotate-90"></i> kembali ke Proses</div>
+                  </div>
+                  <div class="px-3 py-2 rounded-full border-2 border-brandGreen text-brandGreen font-bold text-xs">Selesai</div>
+                </div>
+              </div>
+            </div>
             <p class="text-xs font-bold text-purple-400 uppercase mb-2">Contoh: Penilaian Video Konten Digital</p>
             <p class="text-sm text-textGray mb-3">Guru KKA ingin melakukan penilaian video konten digital yang dibuat siswa kelas X. Guru memeriksa video siswa satu per satu. Setiap video dinilai berdasarkan rubrik. Setelah satu video selesai dinilai, guru melanjutkan ke video berikutnya. Proses dilakukan sampai semua video selesai dinilai.</p>
             <div class="bg-black/40 rounded-xl p-5 flex justify-center overflow-x-auto">
@@ -633,10 +580,8 @@ tailwind.config = { theme: { extend: {
         </div>
       </div>
     </div>
-  </div>
 
-
-        <!-- TAB 3: VIDEO -->
+    <!-- TAB 3: VIDEO -->
     <div id="video" class="tab-panel space-y-5">
       <div class="bg-brandGray border border-red-500/30 rounded-2xl p-6">
         <div class="flex items-center gap-3 border-b border-white/10 pb-4 mb-5">
@@ -662,7 +607,6 @@ tailwind.config = { theme: { extend: {
 
     <!-- TAB 4: SIMULASI -->
     <div id="simulasi" class="tab-panel space-y-5">
-      <!-- Simulator Flowchart -->
       <div class="bg-brandGray border border-brandGreen/30 rounded-2xl p-6">
         <div class="flex items-center gap-3 border-b border-white/10 pb-4 mb-5">
           <div class="w-12 h-12 rounded-xl bg-brandGreen/15 border border-brandGreen/30 flex items-center justify-center text-brandGreen text-2xl"><i class="fa-solid fa-bolt"></i></div>
@@ -713,7 +657,6 @@ tailwind.config = { theme: { extend: {
         </div>
       </div>
 
-      <!-- Playground di Simulasi -->
       <div class="bg-brandGray border border-purple-500/30 rounded-2xl p-6">
         <div class="flex items-center gap-3 border-b border-white/10 pb-4 mb-5">
           <div class="w-12 h-12 rounded-xl bg-purple-500/15 border border-purple-500/30 flex items-center justify-center text-purple-400 text-2xl"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
@@ -763,18 +706,27 @@ tailwind.config = { theme: { extend: {
         </div>
       </div>
     </div>
-
-    <!-- TAB 5: LKPD -->
+        <!-- TAB 5: LKPD -->
     <div id="lkpd" class="tab-panel space-y-5">
       <div class="bg-gradient-to-br from-amber-500/10 via-brandGray to-brandGray border border-amber-500/30 rounded-2xl p-6">
         <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/15 border border-amber-500/30 text-sm font-bold text-amber-400 mb-3">
           <i class="fa-solid fa-pen-ruler"></i> LKPD Pertemuan 1
         </div>
         <h2 class="text-2xl font-extrabold mb-2">Merancang Algoritma dan Flowchart</h2>
-        <p class="text-textGray">Kerjakan secara <strong class="text-white">individu</strong>. Flowchart dikerjakan langsung di halaman ini.</p>
+        <p class="text-textGray">Kerjakan secara <strong class="text-white">individu</strong>. Pilih salah satu atau kerjakan keduanya.</p>
       </div>
 
-            <!-- IDENTITAS PREVIEW -->
+      <!-- SUB-TAB LKPD 1 & LKPD 2 -->
+      <div class="flex flex-wrap gap-2">
+        <button id="lkpd-tab-btn-1" class="subtab-btn active" onclick="switchLkpdTab(1)">
+          <i class="fa-solid fa-video"></i> LKPD 1 — Video Konten Digital
+        </button>
+        <button id="lkpd-tab-btn-2" class="subtab-btn" onclick="switchLkpdTab(2)">
+          <i class="fa-solid fa-clipboard-check"></i> LKPD 2 — Pengumpulan Tugas
+        </button>
+      </div>
+
+      <!-- IDENTITAS PREVIEW -->
       <div class="bg-brandGray border border-amber-500/30 rounded-2xl p-5">
         <div class="flex items-center gap-3">
           <div class="w-11 h-11 rounded-xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center text-amber-400 shrink-0">
@@ -790,153 +742,326 @@ tailwind.config = { theme: { extend: {
         </div>
       </div>
 
-      <!-- STUDI KASUS -->
-      <div class="bg-brandGray border border-amber-500/30 rounded-2xl p-6 space-y-4">
-        <div class="flex items-center gap-3 border-b border-white/10 pb-4">
-          <div class="w-11 h-11 rounded-xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center text-amber-400 text-lg"><i class="fa-solid fa-video"></i></div>
-          <div>
-            <h3 class="text-lg font-bold">Studi Kasus: Penilaian Video Konten Digital</h3>
-            <p class="text-xs text-textGray">Bacalah dengan teliti sebelum mengerjakan aktivitas.</p>
-          </div>
-        </div>
-        <p class="text-sm text-textGray leading-relaxed">Guru KKA akan melakukan penilaian terhadap <strong class="text-white">video konten digital</strong> yang dibuat oleh siswa kelas X.</p>
-        <p class="text-sm text-textGray leading-relaxed">Setiap video akan dinilai menggunakan beberapa kriteria, seperti <strong class="text-white">kesesuaian isi</strong>, <strong class="text-white">kreativitas</strong>, dan <strong class="text-white">kualitas penyajian</strong>. Setelah memberikan nilai, guru akan menentukan apakah video tersebut <strong class="text-white">memenuhi nilai minimum 75</strong>.</p>
-        <p class="text-sm text-textGray leading-relaxed">Guru harus melakukan proses tersebut untuk seluruh video siswa. Jika masih ada video yang belum dinilai, guru melanjutkan penilaian ke video berikutnya. Jika semua video sudah dinilai, guru membuat rekapitulasi nilai.</p>
-        <div class="bg-amber-500/10 border border-amber-500/30 rounded-xl p-4">
-          <p class="text-sm text-amber-300"><i class="fa-solid fa-circle-question mr-2"></i><strong>Permasalahan:</strong> Bagaimana cara membuat algoritma yang dapat membantu guru melakukan proses penilaian video siswa secara sistematis dari video pertama hingga seluruh video selesai dinilai?</p>
-        </div>
-      </div>
+      <!-- ========== LKPD 1 CONTENT ========== -->
+      <div id="lkpd-content-1" class="space-y-5">
 
-      <!-- AKTIVITAS 1 -->
-      <div class="bg-brandGray border border-white/10 rounded-2xl p-6">
-        <div class="flex items-center gap-3 border-b border-white/10 pb-4 mb-4">
-          <div class="w-10 h-10 rounded-xl bg-sky-500/15 border border-sky-500/30 flex items-center justify-center text-sky-400 font-bold">1</div>
-          <div>
-            <h3 class="text-lg font-bold">Memahami Masalah</h3>
-            <p class="text-xs text-textGray">Identifikasi informasi dari kasus di atas.</p>
+        <!-- STUDI KASUS -->
+        <div class="bg-brandGray border border-amber-500/30 rounded-2xl p-6 space-y-4">
+          <div class="flex items-center gap-3 border-b border-white/10 pb-4">
+            <div class="w-11 h-11 rounded-xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center text-amber-400 text-lg"><i class="fa-solid fa-video"></i></div>
+            <div>
+              <h3 class="text-lg font-bold">Studi Kasus: Penilaian Video Konten Digital</h3>
+              <p class="text-xs text-textGray">Bacalah dengan teliti sebelum mengerjakan aktivitas.</p>
+            </div>
+          </div>
+          <p class="text-sm text-textGray leading-relaxed">Guru KKA akan melakukan penilaian terhadap <strong class="text-white">video konten digital</strong> yang dibuat oleh siswa kelas X.</p>
+          <p class="text-sm text-textGray leading-relaxed">Setiap video akan dinilai menggunakan beberapa kriteria, seperti <strong class="text-white">kesesuaian isi</strong>, <strong class="text-white">kreativitas</strong>, dan <strong class="text-white">kualitas penyajian</strong>. Setelah memberikan nilai, guru akan menentukan apakah video tersebut <strong class="text-white">memenuhi nilai minimum 75</strong>.</p>
+          <p class="text-sm text-textGray leading-relaxed">Guru harus melakukan proses tersebut untuk seluruh video siswa. Jika masih ada video yang belum dinilai, guru melanjutkan penilaian ke video berikutnya. Jika semua video sudah dinilai, guru membuat rekapitulasi nilai.</p>
+          <div class="bg-amber-500/10 border border-amber-500/30 rounded-xl p-4">
+            <p class="text-sm text-amber-300"><i class="fa-solid fa-circle-question mr-2"></i><strong>Permasalahan:</strong> Bagaimana cara membuat algoritma yang dapat membantu guru melakukan proses penilaian video siswa secara sistematis dari video pertama hingga seluruh video selesai dinilai?</p>
           </div>
         </div>
-        <div class="space-y-3">
-          <div class="bg-white/5 border border-white/10 rounded-xl p-4">
-            <p class="text-sm font-bold text-sky-400 mb-2">Apa yang menjadi <em>input</em>?</p>
-            <textarea id="l1-input" class="form-textarea" placeholder="Tulis jawabanmu..."></textarea>
-          </div>
-          <div class="bg-white/5 border border-white/10 rounded-xl p-4">
-            <p class="text-sm font-bold text-amber-400 mb-2">Apa <em>proses utama</em> yang dilakukan?</p>
-            <textarea id="l1-proses" class="form-textarea" placeholder="Tulis jawabanmu..."></textarea>
-          </div>
-          <div class="bg-white/5 border border-white/10 rounded-xl p-4">
-            <p class="text-sm font-bold text-purple-400 mb-2">Apa yang menjadi <em>output</em>?</p>
-            <textarea id="l1-output" class="form-textarea" placeholder="Tulis jawabanmu..."></textarea>
-          </div>
-          <div class="bg-white/5 border border-white/10 rounded-xl p-4">
-            <p class="text-sm font-bold text-rose-400 mb-2">Kapan proses penilaian <em>berhenti</em>?</p>
-            <textarea id="l1-stop" class="form-textarea" placeholder="Tulis jawabanmu..."></textarea>
-          </div>
-          <div class="bg-white/5 border border-white/10 rounded-xl p-4">
-            <p class="text-sm font-bold text-emerald-400 mb-2">Apakah ada <em>kondisi</em> yang harus diperiksa?</p>
-            <textarea id="l1-kondisi" class="form-textarea" placeholder="Tulis jawabanmu..."></textarea>
-          </div>
-        </div>
-      </div>
 
-      <!-- AKTIVITAS 2 -->
-      <div class="bg-brandGray border border-white/10 rounded-2xl p-6">
-        <div class="flex items-center gap-3 border-b border-white/10 pb-4 mb-4">
-          <div class="w-10 h-10 rounded-xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center text-emerald-400 font-bold">2</div>
-          <div>
-            <h3 class="text-lg font-bold">Membuat Notasi Deskriptif</h3>
-            <p class="text-xs text-textGray">Ubah kasus menjadi algoritma dalam bentuk notasi deskriptif.</p>
+        <!-- AKTIVITAS 1 -->
+        <div class="bg-brandGray border border-white/10 rounded-2xl p-6">
+          <div class="flex items-center gap-3 border-b border-white/10 pb-4 mb-4">
+            <div class="w-10 h-10 rounded-xl bg-sky-500/15 border border-sky-500/30 flex items-center justify-center text-sky-400 font-bold">1</div>
+            <div>
+              <h3 class="text-lg font-bold">Memahami Masalah</h3>
+              <p class="text-xs text-textGray">Identifikasi informasi dari kasus di atas.</p>
+            </div>
           </div>
-        </div>
-        <div class="bg-emerald-500/5 border border-emerald-500/25 rounded-xl p-4 mb-4">
-          <p class="text-xs text-emerald-300 flex items-start gap-2"><i class="fa-solid fa-lightbulb mt-0.5"></i><span><strong>Petunjuk:</strong> Tuliskan langkah dengan kalimat sederhana dan berurutan. Algoritma harus memiliki: <strong>Mulai → proses → kondisi (jika perlu) → proses yang diulang → Selesai</strong>.</span></p>
-          <p class="text-xs text-emerald-300 mt-3 flex items-start gap-2"><i class="fa-solid fa-brain mt-0.5"></i><span><strong>Petunjuk Berpikir:</strong> Bayangkan kamu adalah guru yang menilai video. Apa yang kamu lakukan terhadap satu video? Setelah selesai, apa yang kamu lakukan? Bagaimana jika masih ada video lain?</span></p>
-        </div>
-        <div class="bg-black/40 border border-emerald-500/20 rounded-xl p-5">
-          <p class="text-xs font-bold text-emerald-400 uppercase mb-3">Judul: Algoritma Penilaian Video Konten Digital</p>
-          <textarea id="l1-deskriptif" class="form-textarea mono" style="min-height:280px" placeholder="1. Mulai&#10;2. ...&#10;3. ...&#10;4. ...&#10;5. ...&#10;6. ...&#10;7. ...&#10;8. ...&#10;9. Selesai"></textarea>
-        </div>
-      </div>
-
-      <!-- AKTIVITAS 3 -->
-      <div class="bg-brandGray border border-purple-500/30 rounded-2xl p-6">
-        <div class="flex items-center gap-3 border-b border-white/10 pb-4 mb-4">
-          <div class="w-10 h-10 rounded-xl bg-purple-500/15 border border-purple-500/30 flex items-center justify-center text-purple-400 font-bold">3</div>
-          <div>
-            <h3 class="text-lg font-bold">Membuat Flowchart</h3>
-            <p class="text-xs text-textGray">Ubah algoritma deskriptifmu menjadi flowchart di panel bawah.</p>
-          </div>
-        </div>
-        <div class="bg-purple-500/5 border border-purple-500/25 rounded-xl p-4 mb-4">
-          <p class="text-xs font-bold text-purple-300 mb-2"><i class="fa-solid fa-list-check mr-1"></i> Ketentuan Simbol:</p>
-          <ul class="text-xs text-textGray space-y-1 pl-5 list-disc">
-            <li><strong class="text-brandGreen">Oval</strong> → Mulai/Selesai</li>
-            <li><strong class="text-sky-400">Jajar genjang</strong> → Input/Output</li>
-            <li><strong class="text-amber-400">Persegi panjang</strong> → Proses</li>
-            <li><strong class="text-rose-400">Belah ketupat</strong> → Percabangan/keputusan</li>
-            <li><strong class="text-brandGreen">Panah</strong> → Alur (gunakan panah kembali jika ada perulangan)</li>
-          </ul>
-        </div>
-        <div class="bg-purple-500/10 border border-purple-500/30 rounded-xl p-4 mb-4 text-xs">
-          <p class="font-bold text-purple-300 mb-2"><i class="fa-solid fa-circle-info mr-1"></i> Cara Pakai Playground:</p>
-          <ul class="space-y-1 pl-5 list-disc text-textGray">
-            <li>Klik simbol di palet kiri → muncul di canvas.</li>
-            <li>Drag untuk atur posisi · Double-click teks untuk edit label.</li>
-            <li>Aktifkan <strong class="text-purple-300">Connect Mode</strong> → klik 2 simbol untuk panah.</li>
-            <li>Dari <strong class="text-rose-400">Keputusan</strong> → muncul pilihan label Ya/Tidak.</li>
-            <li>Tekan <strong class="text-rose-300">Delete</strong> untuk hapus simbol terpilih.</li>
-          </ul>
-        </div>
-        <div class="flex flex-wrap gap-2 mb-4">
-          <button id="btn-connect-lkpd" onclick="toggleConnect('lkpd')" class="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-sm font-semibold hover:bg-purple-500/20 transition">
-            <i class="fa-solid fa-link"></i> <span id="connect-label-lkpd">Connect: OFF</span>
-          </button>
-          <button onclick="deleteSym('lkpd')" class="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-sm font-semibold hover:bg-rose-500/20 transition">
-            <i class="fa-solid fa-trash"></i> Hapus
-          </button>
-          <button onclick="clearPlay('lkpd')" class="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-sm font-semibold hover:bg-amber-500/20 transition">
-            <i class="fa-solid fa-broom"></i> Bersihkan
-          </button>
-        </div>
-        <div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
-          <div class="space-y-2">
-            <div class="palette-item" data-canvas="lkpd" data-type="terminal"><div class="palette-icon"><div class="w-9 h-5 rounded-full border-2 border-brandGreen"></div></div><div class="text-sm"><div class="font-bold text-brandGreen">Terminal</div><div class="text-[10px] text-textGray">Mulai/Selesai</div></div></div>
-            <div class="palette-item" data-canvas="lkpd" data-type="io"><div class="palette-icon"><div class="w-9 h-5 border-2 border-sky-400" style="transform:skewX(-15deg)"></div></div><div class="text-sm"><div class="font-bold text-sky-400">Input/Output</div><div class="text-[10px] text-textGray">Terima/tampilkan</div></div></div>
-            <div class="palette-item" data-canvas="lkpd" data-type="process"><div class="palette-icon"><div class="w-9 h-5 border-2 border-amber-400"></div></div><div class="text-sm"><div class="font-bold text-amber-400">Proses</div><div class="text-[10px] text-textGray">Hitung/olah</div></div></div>
-            <div class="palette-item" data-canvas="lkpd" data-type="decision"><div class="palette-icon"><div class="w-5 h-5 border-2 border-rose-400" style="transform:rotate(45deg)"></div></div><div class="text-sm"><div class="font-bold text-rose-400">Keputusan</div><div class="text-[10px] text-textGray">Ya/Tidak</div></div></div>
-          </div>
-          <div class="lg:col-span-3">
-            <div id="playground-lkpd" data-canvas="lkpd" class="relative w-full min-h-[560px] bg-black/40 rounded-xl border-2 border-dashed border-white/15 overflow-hidden select-none">
-              <svg id="arrow-layer-lkpd" class="absolute inset-0 w-full h-full pointer-events-none z-[5]" xmlns="http://www.w3.org/2000/svg" style="overflow:visible">
-                <defs><marker id="arrowhead-lkpd" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#00e676"/></marker></defs>
-                <g id="arrows-group-lkpd"></g>
-              </svg>
-              <div id="canvas-empty-lkpd" class="absolute inset-0 flex flex-col items-center justify-center text-center pointer-events-none text-white/30">
-                <i class="fa-solid fa-arrow-pointer text-4xl mb-2"></i>
-                <p class="text-sm">Rangkai flowchart kasus penilaian video di sini</p>
-              </div>
+          <div class="space-y-3">
+            <div class="bg-white/5 border border-white/10 rounded-xl p-4">
+              <p class="text-sm font-bold text-sky-400 mb-2">Apa yang menjadi <em>input</em>?</p>
+              <textarea id="l1-input" class="form-textarea" placeholder="Tulis jawabanmu..."></textarea>
+            </div>
+            <div class="bg-white/5 border border-white/10 rounded-xl p-4">
+              <p class="text-sm font-bold text-amber-400 mb-2">Apa <em>proses utama</em> yang dilakukan?</p>
+              <textarea id="l1-proses" class="form-textarea" placeholder="Tulis jawabanmu..."></textarea>
+            </div>
+            <div class="bg-white/5 border border-white/10 rounded-xl p-4">
+              <p class="text-sm font-bold text-purple-400 mb-2">Apa yang menjadi <em>output</em>?</p>
+              <textarea id="l1-output" class="form-textarea" placeholder="Tulis jawabanmu..."></textarea>
+            </div>
+            <div class="bg-white/5 border border-white/10 rounded-xl p-4">
+              <p class="text-sm font-bold text-rose-400 mb-2">Kapan proses penilaian <em>berhenti</em>?</p>
+              <textarea id="l1-stop" class="form-textarea" placeholder="Tulis jawabanmu..."></textarea>
+            </div>
+            <div class="bg-white/5 border border-white/10 rounded-xl p-4">
+              <p class="text-sm font-bold text-emerald-400 mb-2">Apakah ada <em>kondisi</em> yang harus diperiksa?</p>
+              <textarea id="l1-kondisi" class="form-textarea" placeholder="Tulis jawabanmu..."></textarea>
             </div>
           </div>
         </div>
-        <div class="mt-4">
-          <label class="block text-xs font-bold text-textGray uppercase mb-2">Deskripsi Flowchart</label>
-          <textarea id="l1-deskripsi" class="form-textarea" style="min-height:100px" placeholder="Ceritakan alur flowchart yang kamu buat..."></textarea>
-        </div>
-      </div>
 
-      <!-- SUBMIT -->
-      <div class="bg-brandGray border border-brandGreen/30 rounded-2xl p-5">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <button onclick="submitLKPD1()" class="py-3.5 bg-brandGreen text-black font-bold rounded-xl hover:bg-green-400 transition flex items-center justify-center gap-2">
-            <i class="fa-solid fa-paper-plane"></i> Kumpulkan LKPD
-          </button>
-          <button onclick="downloadLKPD1()" class="py-3.5 bg-sky-500/15 border border-sky-500/40 text-sky-400 font-bold rounded-xl hover:bg-sky-500/25 transition flex items-center justify-center gap-2">
-            <i class="fa-solid fa-download"></i> Unduh LKPD
-          </button>
+        <!-- AKTIVITAS 2 -->
+        <div class="bg-brandGray border border-white/10 rounded-2xl p-6">
+          <div class="flex items-center gap-3 border-b border-white/10 pb-4 mb-4">
+            <div class="w-10 h-10 rounded-xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center text-emerald-400 font-bold">2</div>
+            <div>
+              <h3 class="text-lg font-bold">Membuat Notasi Deskriptif</h3>
+              <p class="text-xs text-textGray">Ubah kasus menjadi algoritma dalam bentuk notasi deskriptif.</p>
+            </div>
+          </div>
+          <div class="bg-emerald-500/5 border border-emerald-500/25 rounded-xl p-4 mb-4">
+            <p class="text-xs text-emerald-300 flex items-start gap-2"><i class="fa-solid fa-lightbulb mt-0.5"></i><span><strong>Petunjuk:</strong> Tuliskan langkah dengan kalimat sederhana dan berurutan. Algoritma harus memiliki: <strong>Mulai → proses → kondisi (jika perlu) → proses yang diulang → Selesai</strong>.</span></p>
+            <p class="text-xs text-emerald-300 mt-3 flex items-start gap-2"><i class="fa-solid fa-brain mt-0.5"></i><span><strong>Petunjuk Berpikir:</strong> Bayangkan kamu adalah guru yang menilai video. Apa yang kamu lakukan terhadap satu video? Setelah selesai, apa yang kamu lakukan? Bagaimana jika masih ada video lain?</span></p>
+          </div>
+          <div class="bg-black/40 border border-emerald-500/20 rounded-xl p-5">
+            <p class="text-xs font-bold text-emerald-400 uppercase mb-3">Judul: Algoritma Penilaian Video Konten Digital</p>
+            <textarea id="l1-deskriptif" class="form-textarea mono" style="min-height:280px" placeholder="1. Mulai&#10;2. ...&#10;3. ...&#10;4. ...&#10;5. ...&#10;6. ...&#10;7. ...&#10;8. ...&#10;9. Selesai"></textarea>
+          </div>
         </div>
-        <div id="l1-msg" class="hidden mt-3 text-sm font-semibold rounded-lg px-4 py-3"></div>
-      </div>
+
+        <!-- AKTIVITAS 3 -->
+        <div class="bg-brandGray border border-purple-500/30 rounded-2xl p-6">
+          <div class="flex items-center gap-3 border-b border-white/10 pb-4 mb-4">
+            <div class="w-10 h-10 rounded-xl bg-purple-500/15 border border-purple-500/30 flex items-center justify-center text-purple-400 font-bold">3</div>
+            <div>
+              <h3 class="text-lg font-bold">Membuat Flowchart</h3>
+              <p class="text-xs text-textGray">Ubah algoritma deskriptifmu menjadi flowchart di panel bawah.</p>
+            </div>
+          </div>
+          <div class="bg-purple-500/5 border border-purple-500/25 rounded-xl p-4 mb-4">
+            <p class="text-xs font-bold text-purple-300 mb-2"><i class="fa-solid fa-list-check mr-1"></i> Ketentuan Simbol:</p>
+            <ul class="text-xs text-textGray space-y-1 pl-5 list-disc">
+              <li><strong class="text-brandGreen">Oval</strong> → Mulai/Selesai</li>
+              <li><strong class="text-sky-400">Jajar genjang</strong> → Input/Output</li>
+              <li><strong class="text-amber-400">Persegi panjang</strong> → Proses</li>
+              <li><strong class="text-rose-400">Belah ketupat</strong> → Percabangan/keputusan</li>
+              <li><strong class="text-brandGreen">Panah</strong> → Alur (gunakan panah kembali jika ada perulangan)</li>
+            </ul>
+          </div>
+          <div class="bg-purple-500/10 border border-purple-500/30 rounded-xl p-4 mb-4 text-xs">
+            <p class="font-bold text-purple-300 mb-2"><i class="fa-solid fa-circle-info mr-1"></i> Cara Pakai Playground:</p>
+            <ul class="space-y-1 pl-5 list-disc text-textGray">
+              <li>Klik simbol di palet kiri → muncul di canvas.</li>
+              <li>Drag untuk atur posisi · Double-click teks untuk edit label.</li>
+              <li>Aktifkan <strong class="text-purple-300">Connect Mode</strong> → klik 2 simbol untuk panah.</li>
+              <li>Dari <strong class="text-rose-400">Keputusan</strong> → muncul pilihan label Ya/Tidak.</li>
+              <li>Tekan <strong class="text-rose-300">Delete</strong> untuk hapus simbol terpilih.</li>
+            </ul>
+          </div>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <button id="btn-connect-lkpd" onclick="toggleConnect('lkpd')" class="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-sm font-semibold hover:bg-purple-500/20 transition">
+              <i class="fa-solid fa-link"></i> <span id="connect-label-lkpd">Connect: OFF</span>
+            </button>
+            <button onclick="deleteSym('lkpd')" class="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-sm font-semibold hover:bg-rose-500/20 transition">
+              <i class="fa-solid fa-trash"></i> Hapus
+            </button>
+            <button onclick="clearPlay('lkpd')" class="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-sm font-semibold hover:bg-amber-500/20 transition">
+              <i class="fa-solid fa-broom"></i> Bersihkan
+            </button>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
+            <div class="space-y-2">
+              <div class="palette-item" data-canvas="lkpd" data-type="terminal"><div class="palette-icon"><div class="w-9 h-5 rounded-full border-2 border-brandGreen"></div></div><div class="text-sm"><div class="font-bold text-brandGreen">Terminal</div><div class="text-[10px] text-textGray">Mulai/Selesai</div></div></div>
+              <div class="palette-item" data-canvas="lkpd" data-type="io"><div class="palette-icon"><div class="w-9 h-5 border-2 border-sky-400" style="transform:skewX(-15deg)"></div></div><div class="text-sm"><div class="font-bold text-sky-400">Input/Output</div><div class="text-[10px] text-textGray">Terima/tampilkan</div></div></div>
+              <div class="palette-item" data-canvas="lkpd" data-type="process"><div class="palette-icon"><div class="w-9 h-5 border-2 border-amber-400"></div></div><div class="text-sm"><div class="font-bold text-amber-400">Proses</div><div class="text-[10px] text-textGray">Hitung/olah</div></div></div>
+              <div class="palette-item" data-canvas="lkpd" data-type="decision"><div class="palette-icon"><div class="w-5 h-5 border-2 border-rose-400" style="transform:rotate(45deg)"></div></div><div class="text-sm"><div class="font-bold text-rose-400">Keputusan</div><div class="text-[10px] text-textGray">Ya/Tidak</div></div></div>
+            </div>
+            <div class="lg:col-span-3">
+              <div id="playground-lkpd" data-canvas="lkpd" class="relative w-full min-h-[560px] bg-black/40 rounded-xl border-2 border-dashed border-white/15 overflow-hidden select-none">
+                <svg id="arrow-layer-lkpd" class="absolute inset-0 w-full h-full pointer-events-none z-[5]" xmlns="http://www.w3.org/2000/svg" style="overflow:visible">
+                  <defs><marker id="arrowhead-lkpd" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#00e676"/></marker></defs>
+                  <g id="arrows-group-lkpd"></g>
+                </svg>
+                <div id="canvas-empty-lkpd" class="absolute inset-0 flex flex-col items-center justify-center text-center pointer-events-none text-white/30">
+                  <i class="fa-solid fa-arrow-pointer text-4xl mb-2"></i>
+                  <p class="text-sm">Rangkai flowchart kasus penilaian video di sini</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4">
+            <label class="block text-xs font-bold text-textGray uppercase mb-2">Deskripsi Flowchart</label>
+            <textarea id="l1-deskripsi" class="form-textarea" style="min-height:100px" placeholder="Ceritakan alur flowchart yang kamu buat..."></textarea>
+          </div>
+        </div>
+
+        <!-- SUBMIT LKPD 1 -->
+        <div class="bg-brandGray border border-brandGreen/30 rounded-2xl p-5">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <button onclick="submitLKPD1()" class="py-3.5 bg-brandGreen text-black font-bold rounded-xl hover:bg-green-400 transition flex items-center justify-center gap-2">
+              <i class="fa-solid fa-paper-plane"></i> Kumpulkan LKPD 1
+            </button>
+            <button onclick="downloadLKPD1()" class="py-3.5 bg-sky-500/15 border border-sky-500/40 text-sky-400 font-bold rounded-xl hover:bg-sky-500/25 transition flex items-center justify-center gap-2">
+              <i class="fa-solid fa-download"></i> Unduh LKPD 1
+            </button>
+          </div>
+          <div id="l1-msg" class="hidden mt-3 text-sm font-semibold rounded-lg px-4 py-3"></div>
+        </div>
+
+      </div><!-- end lkpd-content-1 -->
+
+      <!-- ========== LKPD 2 CONTENT (PENGAYAAN) ========== -->
+      <div id="lkpd-content-2" class="space-y-5 hidden">
+
+        <!-- STUDI KASUS 2 -->
+        <div class="bg-brandGray border border-emerald-500/30 rounded-2xl p-6 space-y-4">
+          <div class="flex items-center gap-3 border-b border-white/10 pb-4">
+            <div class="w-11 h-11 rounded-xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-lg"><i class="fa-solid fa-users"></i></div>
+            <div>
+              <h3 class="text-lg font-bold">Studi Kasus: Pengecekan Pengumpulan Tugas</h3>
+              <p class="text-xs text-textGray">Bacalah dengan teliti sebelum mengerjakan aktivitas.</p>
+            </div>
+          </div>
+          <p class="text-sm text-textGray leading-relaxed">Ketua kelompok atau pengurus kelas ditugaskan untuk <strong class="text-white">merekap status pengumpulan tugas proyek</strong> mata pelajaran Koding dan Kecerdasan Artifisial (KKA) teman sekelasnya.</p>
+          <p class="text-sm text-textGray leading-relaxed">Di dalam kelas terdapat sejumlah siswa yang harus diperiksa <strong class="text-white">satu per satu secara berurutan</strong> mulai dari nomor urut pertama hingga terakhir.</p>
+          <div class="bg-black/30 rounded-xl p-4 space-y-2">
+            <p class="font-bold text-emerald-400 text-sm mb-2">Untuk setiap siswa yang diperiksa:</p>
+            <ol class="list-decimal list-inside space-y-1.5 text-textGray text-sm">
+              <li>Ketua kelompok membuka daftar nama siswa dan melihat status tugas mereka.</li>
+              <li>Jika statusnya <strong class="text-emerald-400">Sudah Mengumpulkan</strong>, dicatat sebagai data siswa yang masuk dalam daftar pengumpul.</li>
+              <li>Jika statusnya <strong class="text-rose-400">Belum Mengumpulkan</strong>, dicatat sebagai data siswa yang masuk dalam daftar untuk diingatkan.</li>
+              <li>Ketua kelompok berpindah mengecek ke siswa berikutnya.</li>
+              <li>Proses ini berulang terus-menerus hingga seluruh siswa di kelas selesai diperiksa.</li>
+            </ol>
+          </div>
+          <p class="text-sm text-textGray leading-relaxed">Setelah seluruh siswa selesai dicek, ketua kelompok ingin mengetahui rekapitulasi akhir yang mencakup:</p>
+          <ul class="text-sm text-textGray space-y-1 pl-5 list-disc">
+            <li><strong class="text-white">Total jumlah siswa yang sudah mengumpulkan tugas.</strong></li>
+            <li><strong class="text-white">Total jumlah siswa yang belum mengumpulkan tugas.</strong></li>
+            <li><strong class="text-white">Daftar nama siswa yang perlu diingatkan.</strong></li>
+          </ul>
+          <div class="bg-emerald-500/10 border border-emerald-500/30 rounded-xl p-4">
+            <p class="text-sm text-emerald-300"><i class="fa-solid fa-circle-question mr-2"></i><strong>Permasalahan:</strong> Bagaimana cara merancang alur logika atau algoritma yang sistematis untuk membantu ketua kelompok memeriksa status pengumpulan tugas teman sekelasnya dari awal hingga akhir secara efisien?</p>
+          </div>
+        </div>
+
+        <!-- AKTIVITAS 1 -->
+        <div class="bg-brandGray border border-white/10 rounded-2xl p-6">
+          <div class="flex items-center gap-3 border-b border-white/10 pb-4 mb-4">
+            <div class="w-10 h-10 rounded-xl bg-sky-500/15 border border-sky-500/30 flex items-center justify-center text-sky-400 font-bold">1</div>
+            <div>
+              <h3 class="text-lg font-bold">Memahami Masalah</h3>
+              <p class="text-xs text-textGray">Identifikasi informasi dari kasus di atas.</p>
+            </div>
+          </div>
+          <div class="space-y-3">
+            <div class="bg-white/5 border border-white/10 rounded-xl p-4">
+              <p class="text-sm font-bold text-sky-400 mb-2">Apa yang menjadi <em>input</em>?</p>
+              <textarea id="l2-input" class="form-textarea" placeholder="Tulis jawabanmu..."></textarea>
+            </div>
+            <div class="bg-white/5 border border-white/10 rounded-xl p-4">
+              <p class="text-sm font-bold text-amber-400 mb-2">Apa <em>proses utama</em> yang dilakukan?</p>
+              <textarea id="l2-proses" class="form-textarea" placeholder="Tulis jawabanmu..."></textarea>
+            </div>
+            <div class="bg-white/5 border border-white/10 rounded-xl p-4">
+              <p class="text-sm font-bold text-purple-400 mb-2">Apa yang menjadi <em>output</em>?</p>
+              <textarea id="l2-output" class="form-textarea" placeholder="Tulis jawabanmu..."></textarea>
+            </div>
+            <div class="bg-white/5 border border-white/10 rounded-xl p-4">
+              <p class="text-sm font-bold text-rose-400 mb-2">Kapan proses pengecekan <em>berhenti</em>?</p>
+              <textarea id="l2-stop" class="form-textarea" placeholder="Tulis jawabanmu..."></textarea>
+            </div>
+            <div class="bg-white/5 border border-white/10 rounded-xl p-4">
+              <p class="text-sm font-bold text-emerald-400 mb-2">Apakah ada <em>kondisi</em> yang harus diperiksa?</p>
+              <textarea id="l2-kondisi" class="form-textarea" placeholder="Tulis jawabanmu..."></textarea>
+            </div>
+          </div>
+        </div>
+
+        <!-- AKTIVITAS 2 -->
+        <div class="bg-brandGray border border-white/10 rounded-2xl p-6">
+          <div class="flex items-center gap-3 border-b border-white/10 pb-4 mb-4">
+            <div class="w-10 h-10 rounded-xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center text-emerald-400 font-bold">2</div>
+            <div>
+              <h3 class="text-lg font-bold">Membuat Notasi Deskriptif</h3>
+              <p class="text-xs text-textGray">Ubah kasus menjadi algoritma dalam bentuk notasi deskriptif.</p>
+            </div>
+          </div>
+          <div class="bg-emerald-500/5 border border-emerald-500/25 rounded-xl p-4 mb-4">
+            <p class="text-xs text-emerald-300 flex items-start gap-2"><i class="fa-solid fa-lightbulb mt-0.5"></i><span><strong>Petunjuk:</strong> Tuliskan langkah dengan kalimat sederhana dan berurutan. Algoritma harus memiliki: <strong>Mulai → proses → kondisi → proses yang diulang → Selesai</strong>.</span></p>
+            <p class="text-xs text-emerald-300 mt-3 flex items-start gap-2"><i class="fa-solid fa-brain mt-0.5"></i><span><strong>Petunjuk Berpikir:</strong> Bayangkan kamu adalah ketua kelompok. Bagaimana caramu memeriksa setiap siswa satu per satu? Bagaimana caramu menghitung jumlah siswa yang sudah/belum mengumpulkan? Bagaimana caramu mencatat nama siswa yang belum mengumpulkan?</span></p>
+          </div>
+          <div class="bg-black/40 border border-emerald-500/20 rounded-xl p-5">
+            <p class="text-xs font-bold text-emerald-400 uppercase mb-3">Judul: Algoritma Pengecekan Pengumpulan Tugas</p>
+            <textarea id="l2-deskriptif" class="form-textarea mono" style="min-height:280px" placeholder="1. Mulai&#10;2. ...&#10;3. ...&#10;4. ...&#10;5. ...&#10;6. ...&#10;7. ...&#10;8. ...&#10;9. Selesai"></textarea>
+          </div>
+        </div>
+
+        <!-- AKTIVITAS 3 -->
+        <div class="bg-brandGray border border-purple-500/30 rounded-2xl p-6">
+          <div class="flex items-center gap-3 border-b border-white/10 pb-4 mb-4">
+            <div class="w-10 h-10 rounded-xl bg-purple-500/15 border border-purple-500/30 flex items-center justify-center text-purple-400 font-bold">3</div>
+            <div>
+              <h3 class="text-lg font-bold">Membuat Flowchart</h3>
+              <p class="text-xs text-textGray">Ubah algoritma deskriptifmu menjadi flowchart di panel bawah.</p>
+            </div>
+          </div>
+          <div class="bg-purple-500/5 border border-purple-500/25 rounded-xl p-4 mb-4">
+            <p class="text-xs font-bold text-purple-300 mb-2"><i class="fa-solid fa-list-check mr-1"></i> Ketentuan Simbol:</p>
+            <ul class="text-xs text-textGray space-y-1 pl-5 list-disc">
+              <li><strong class="text-brandGreen">Oval</strong> → Mulai/Selesai</li>
+              <li><strong class="text-sky-400">Jajar genjang</strong> → Input/Output</li>
+              <li><strong class="text-amber-400">Persegi panjang</strong> → Proses</li>
+              <li><strong class="text-rose-400">Belah ketupat</strong> → Percabangan/keputusan</li>
+              <li><strong class="text-brandGreen">Panah</strong> → Alur (gunakan panah kembali jika ada perulangan)</li>
+            </ul>
+          </div>
+          <div class="bg-purple-500/10 border border-purple-500/30 rounded-xl p-4 mb-4 text-xs">
+            <p class="font-bold text-purple-300 mb-2"><i class="fa-solid fa-circle-info mr-1"></i> Cara Pakai Playground:</p>
+            <ul class="space-y-1 pl-5 list-disc text-textGray">
+              <li>Klik simbol di palet kiri → muncul di canvas.</li>
+              <li>Drag untuk atur posisi · Double-click teks untuk edit label.</li>
+              <li>Aktifkan <strong class="text-purple-300">Connect Mode</strong> → klik 2 simbol untuk panah.</li>
+              <li>Dari <strong class="text-rose-400">Keputusan</strong> → muncul pilihan label Ya/Tidak.</li>
+              <li>Tekan <strong class="text-rose-300">Delete</strong> untuk hapus simbol terpilih.</li>
+            </ul>
+          </div>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <button id="btn-connect-lkpd2" onclick="toggleConnect('lkpd2')" class="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-sm font-semibold hover:bg-purple-500/20 transition">
+              <i class="fa-solid fa-link"></i> <span id="connect-label-lkpd2">Connect: OFF</span>
+            </button>
+            <button onclick="deleteSym('lkpd2')" class="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-sm font-semibold hover:bg-rose-500/20 transition">
+              <i class="fa-solid fa-trash"></i> Hapus
+            </button>
+            <button onclick="clearPlay('lkpd2')" class="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-sm font-semibold hover:bg-amber-500/20 transition">
+              <i class="fa-solid fa-broom"></i> Bersihkan
+            </button>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
+            <div class="space-y-2">
+              <div class="palette-item" data-canvas="lkpd2" data-type="terminal"><div class="palette-icon"><div class="w-9 h-5 rounded-full border-2 border-brandGreen"></div></div><div class="text-sm"><div class="font-bold text-brandGreen">Terminal</div><div class="text-[10px] text-textGray">Mulai/Selesai</div></div></div>
+              <div class="palette-item" data-canvas="lkpd2" data-type="io"><div class="palette-icon"><div class="w-9 h-5 border-2 border-sky-400" style="transform:skewX(-15deg)"></div></div><div class="text-sm"><div class="font-bold text-sky-400">Input/Output</div><div class="text-[10px] text-textGray">Terima/tampilkan</div></div></div>
+              <div class="palette-item" data-canvas="lkpd2" data-type="process"><div class="palette-icon"><div class="w-9 h-5 border-2 border-amber-400"></div></div><div class="text-sm"><div class="font-bold text-amber-400">Proses</div><div class="text-[10px] text-textGray">Hitung/olah</div></div></div>
+              <div class="palette-item" data-canvas="lkpd2" data-type="decision"><div class="palette-icon"><div class="w-5 h-5 border-2 border-rose-400" style="transform:rotate(45deg)"></div></div><div class="text-sm"><div class="font-bold text-rose-400">Keputusan</div><div class="text-[10px] text-textGray">Ya/Tidak</div></div></div>
+            </div>
+            <div class="lg:col-span-3">
+              <div id="playground-lkpd2" data-canvas="lkpd2" class="relative w-full min-h-[560px] bg-black/40 rounded-xl border-2 border-dashed border-white/15 overflow-hidden select-none">
+                <svg id="arrow-layer-lkpd2" class="absolute inset-0 w-full h-full pointer-events-none z-[5]" xmlns="http://www.w3.org/2000/svg" style="overflow:visible">
+                  <defs><marker id="arrowhead-lkpd2" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#00e676"/></marker></defs>
+                  <g id="arrows-group-lkpd2"></g>
+                </svg>
+                <div id="canvas-empty-lkpd2" class="absolute inset-0 flex flex-col items-center justify-center text-center pointer-events-none text-white/30">
+                  <i class="fa-solid fa-arrow-pointer text-4xl mb-2"></i>
+                  <p class="text-sm">Rangkai flowchart kasus pengumpulan tugas di sini</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4">
+            <label class="block text-xs font-bold text-textGray uppercase mb-2">Deskripsi Flowchart</label>
+            <textarea id="l2-deskripsi" class="form-textarea" style="min-height:100px" placeholder="Ceritakan alur flowchart yang kamu buat..."></textarea>
+          </div>
+        </div>
+
+        <!-- SUBMIT LKPD 2 -->
+        <div class="bg-brandGray border border-emerald-500/30 rounded-2xl p-5">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <button onclick="submitLKPD2()" class="py-3.5 bg-emerald-500 text-black font-bold rounded-xl hover:bg-emerald-400 transition flex items-center justify-center gap-2">
+              <i class="fa-solid fa-paper-plane"></i> Kumpulkan LKPD 2
+            </button>
+            <button onclick="downloadLKPD2()" class="py-3.5 bg-sky-500/15 border border-sky-500/40 text-sky-400 font-bold rounded-xl hover:bg-sky-500/25 transition flex items-center justify-center gap-2">
+              <i class="fa-solid fa-download"></i> Unduh LKPD 2
+            </button>
+          </div>
+          <div id="l2-msg" class="hidden mt-3 text-sm font-semibold rounded-lg px-4 py-3"></div>
+        </div>
+
+      </div><!-- end lkpd-content-2 -->
     </div>
 
     <!-- TAB 6: POST-TEST -->
@@ -1138,7 +1263,6 @@ function updateIdentityUI() {
     btn.classList.add("border-amber-500/30","bg-amber-500/10","text-amber-400");
     btn.classList.remove("border-brandGreen/30","bg-brandGreen/10","text-brandGreen");
   }
-    // Update preview di tab LKPD juga
   const lkpdNama = document.getElementById("lkpd-preview-nama");
   const lkpdKelas = document.getElementById("lkpd-preview-kelas");
   const lkpdAbsen = document.getElementById("lkpd-preview-absen");
@@ -1169,6 +1293,26 @@ function switchSub(evt, id) {
 }
 function markDone(key) {
   if (progressState[key] !== undefined) { progressState[key] = true; updateProgress(); }
+}
+
+/* SUB-TAB LKPD (1 & 2) */
+function switchLkpdTab(n) {
+  const c1 = document.getElementById("lkpd-content-1");
+  const c2 = document.getElementById("lkpd-content-2");
+  const b1 = document.getElementById("lkpd-tab-btn-1");
+  const b2 = document.getElementById("lkpd-tab-btn-2");
+  if (n === 1) {
+    c1.classList.remove("hidden");
+    c2.classList.add("hidden");
+    b1.classList.add("active");
+    b2.classList.remove("active");
+  } else {
+    c1.classList.add("hidden");
+    c2.classList.remove("hidden");
+    b1.classList.remove("active");
+    b2.classList.add("active");
+  }
+  window.scrollTo({top: 200, behavior: "smooth"});
 }
 
 /* ==================================================== */
@@ -1257,7 +1401,7 @@ function submitPre() {
 }
 
 /* ==================================================== */
-/* SIMULATOR FLOWCHART (di tab Simulasi) */
+/* SIMULATOR */
 /* ==================================================== */
 let simStep = -1, simVal = null, simEven = false;
 function resetSim() {
@@ -1306,15 +1450,17 @@ function nextSimStep() {
 }
 
 /* ==================================================== */
-/* FLOWCHART PLAYGROUND (2 canvas: sim & lkpd) */
+/* FLOWCHART PLAYGROUND (3 canvas: sim, lkpd, lkpd2) */
 /* ==================================================== */
 const canvases = {
   sim: { canvas: document.getElementById("playground-canvas"), arrowsGroup: document.getElementById("arrows-group-sim"), empty: document.getElementById("canvas-empty-sim"), marker: "arrowhead-sim" },
-  lkpd: { canvas: document.getElementById("playground-lkpd"), arrowsGroup: document.getElementById("arrows-group-lkpd"), empty: document.getElementById("canvas-empty-lkpd"), marker: "arrowhead-lkpd" }
+  lkpd: { canvas: document.getElementById("playground-lkpd"), arrowsGroup: document.getElementById("arrows-group-lkpd"), empty: document.getElementById("canvas-empty-lkpd"), marker: "arrowhead-lkpd" },
+  lkpd2: { canvas: document.getElementById("playground-lkpd2"), arrowsGroup: document.getElementById("arrows-group-lkpd2"), empty: document.getElementById("canvas-empty-lkpd2"), marker: "arrowhead-lkpd2" }
 };
 const state = {
   sim:  { count:0, zCounter:100, sel:null, connect:false, src:null, arrows:[], pending:null },
-  lkpd: { count:0, zCounter:100, sel:null, connect:false, src:null, arrows:[], pending:null }
+  lkpd: { count:0, zCounter:100, sel:null, connect:false, src:null, arrows:[], pending:null },
+  lkpd2: { count:0, zCounter:100, sel:null, connect:false, src:null, arrows:[], pending:null }
 };
 const SYM_CFG = {
   terminal: { label:"Mulai", width:110, height:44 },
@@ -1391,8 +1537,7 @@ function attachSym(el, which) {
   el.addEventListener("pointerup", e => { drag = false; try { el.releasePointerCapture(e.pointerId); } catch(_){} });
 }
 
-// Event listeners per canvas
-["sim","lkpd"].forEach(which => {
+["sim","lkpd","lkpd2"].forEach(which => {
   const cv = canvases[which].canvas;
   cv.addEventListener("click", e => {
     if (e.target === cv || e.target.id.startsWith("arrow-layer") || e.target.id.startsWith("arrows-group")) {
@@ -1407,6 +1552,7 @@ document.addEventListener("keydown", e => {
     if (document.activeElement.isContentEditable) return;
     if (state.sim.sel) { e.preventDefault(); deleteSym("sim"); }
     else if (state.lkpd.sel) { e.preventDefault(); deleteSym("lkpd"); }
+    else if (state.lkpd2.sel) { e.preventDefault(); deleteSym("lkpd2"); }
   }
 });
 
@@ -1459,10 +1605,10 @@ function handleConnect(el, which) {
 }
 function applyBranchLabel(label) {
   document.getElementById("branch-modal").classList.add("hidden");
-  // Cek which dari pending - cari state yang punya pending
   let which = null;
   if (state.sim.pending) which = "sim";
   else if (state.lkpd.pending) which = "lkpd";
+  else if (state.lkpd2.pending) which = "lkpd2";
   if (!which) return;
   const p = state[which].pending;
   createArrow(which, p.from, p.to, label);
@@ -1473,6 +1619,7 @@ function cancelBranchLabel() {
   document.getElementById("branch-modal").classList.add("hidden");
   state.sim.pending = null;
   state.lkpd.pending = null;
+  state.lkpd2.pending = null;
 }
 function createArrow(which, from, to, label) {
   const st = state[which];
@@ -1519,10 +1666,10 @@ function redrawArrows(which) {
     }
   });
 }
-window.addEventListener("resize", () => { redrawArrows("sim"); redrawArrows("lkpd"); });
+window.addEventListener("resize", () => { redrawArrows("sim"); redrawArrows("lkpd"); redrawArrows("lkpd2"); });
 
 /* ==================================================== */
-/* SUBMIT LKPD */
+/* SUBMIT LKPD 1 */
 /* ==================================================== */
 async function submitLKPD1() {
   if (!validIdentitas()) return;
@@ -1552,34 +1699,53 @@ async function submitLKPD1() {
 }
 
 /* ==================================================== */
-/* UNDUH LKPD (tanpa backtick) */
+/* SUBMIT LKPD 2 */
+/* ==================================================== */
+async function submitLKPD2() {
+  if (!validIdentitas()) return;
+  const fields = {
+    input: document.getElementById("l2-input").value.trim(),
+    proses: document.getElementById("l2-proses").value.trim(),
+    output: document.getElementById("l2-output").value.trim(),
+    stop: document.getElementById("l2-stop").value.trim(),
+    kondisi: document.getElementById("l2-kondisi").value.trim(),
+    deskriptif: document.getElementById("l2-deskriptif").value.trim(),
+    deskripsi_fc: document.getElementById("l2-deskripsi").value.trim()
+  };
+  if (Object.values(fields).some(v => !v)) { showMsg("l2-msg", "Lengkapi semua kolom LKPD 2 dulu!", "rose"); return; }
+  if (state.lkpd2.arrows.length === 0 && canvases.lkpd2.canvas.querySelectorAll(".flowchart-symbol").length === 0) {
+    showMsg("l2-msg", "Flowchart LKPD 2 belum dibuat di panel!", "rose"); return;
+  }
+  showMsg("l2-msg", "Mengirim...", "sky");
+  const ok = await sendData("LKPD_P1_KASUS2", {
+    ...getIdentitas(),
+    kasus: "Pengecekan Pengumpulan Tugas",
+    ...fields
+  });
+  if (ok) {
+    showMsg("l2-msg", "✓ LKPD 2 berhasil dikirim!", "green");
+    progressState.lkpd = true; updateProgress();
+  } else showMsg("l2-msg", "Gagal mengirim. Coba lagi.", "rose");
+}
+
+/* ==================================================== */
+/* UNDUH LKPD 1 */
 /* ==================================================== */
 async function downloadLKPD1() {
   const id = getIdentitas();
   const val = x => document.getElementById(x).value.trim() || "(kosong)";
   const esc = s => String(s).replace(/[<>&]/g, ch => ({"<":"&lt;",">":"&gt;","&":"&amp;"}[ch]));
 
-  // Capture flowchart dari canvas LKPD
   let flowchartImg = null;
   try {
     const canvasEl = document.getElementById("playground-lkpd");
     if (canvasEl && canvasEl.querySelectorAll(".flowchart-symbol").length > 0) {
-      // Sembunyikan selected highlight dulu
       const selectedEls = canvasEl.querySelectorAll(".selected");
       selectedEls.forEach(el => el.classList.remove("selected"));
-      
-      const captured = await html2canvas(canvasEl, {
-        backgroundColor: "#0a0a0a",
-        scale: 2,
-        logging: false,
-        useCORS: true,
-        allowTaint: true
-      });
+      const captured = await html2canvas(canvasEl, { backgroundColor: "#0a0a0a", scale: 2, logging: false, useCORS: true, allowTaint: true });
       flowchartImg = captured.toDataURL("image/png");
     }
-  } catch (err) {
-    console.warn("Gagal capture flowchart:", err);
-  }
+  } catch (err) { console.warn("Gagal capture flowchart:", err); }
 
   let html = "<!doctype html><html><head><meta charset='UTF-8'><title>LKPD P1</title>";
   html += "<style>body{font-family:Arial,sans-serif;max-width:800px;margin:20px auto;padding:30px;color:#222;line-height:1.6}";
@@ -1622,12 +1788,81 @@ async function downloadLKPD1() {
   } else {
     html += "<p style='color:#999;font-size:13px;font-style:italic'>(Flowchart belum dibuat di playground)</p>";
   }
-
   html += "<h3>Deskripsi Flowchart</h3>";
   html += "<div class='box'>" + esc(val("l1-deskripsi")) + "</div>";
-
   html += "<p style='margin-top:30px;text-align:center;color:#888;font-size:12px'>Dicetak: " + new Date().toLocaleString("id-ID") + " - RuangInformatika</p>";
-  
+
+  const w = window.open("", "_blank");
+  if (!w) { alert("Izinkan pop-up untuk mengunduh LKPD."); return; }
+  w.document.open();
+  w.document.write(html);
+  w.document.close();
+  setTimeout(function() { try { w.print(); } catch(e){} }, 1000);
+}
+
+/* ==================================================== */
+/* UNDUH LKPD 2 */
+/* ==================================================== */
+async function downloadLKPD2() {
+  const id = getIdentitas();
+  const val = x => document.getElementById(x).value.trim() || "(kosong)";
+  const esc = s => String(s).replace(/[<>&]/g, ch => ({"<":"&lt;",">":"&gt;","&":"&amp;"}[ch]));
+
+  let flowchartImg = null;
+  try {
+    const canvasEl = document.getElementById("playground-lkpd2");
+    if (canvasEl && canvasEl.querySelectorAll(".flowchart-symbol").length > 0) {
+      const selectedEls = canvasEl.querySelectorAll(".selected");
+      selectedEls.forEach(el => el.classList.remove("selected"));
+      const captured = await html2canvas(canvasEl, { backgroundColor: "#0a0a0a", scale: 2, logging: false, useCORS: true, allowTaint: true });
+      flowchartImg = captured.toDataURL("image/png");
+    }
+  } catch (err) { console.warn("Gagal capture flowchart:", err); }
+
+  let html = "<!doctype html><html><head><meta charset='UTF-8'><title>LKPD P1 - Kasus 2</title>";
+  html += "<style>body{font-family:Arial,sans-serif;max-width:800px;margin:20px auto;padding:30px;color:#222;line-height:1.6}";
+  html += "h1{color:#059669;border-bottom:3px solid #059669;padding-bottom:10px}";
+  html += "h2{color:#1e40af;margin-top:24px;border-bottom:1px solid #ccc;padding-bottom:6px;font-size:18px}";
+  html += "h3{font-size:13px;margin-top:16px;margin-bottom:6px;color:#555;text-transform:uppercase}";
+  html += ".info{display:flex;gap:20px;margin:20px 0;padding:15px;background:#d1fae5;border-left:4px solid #059669;border-radius:6px;flex-wrap:wrap}";
+  html += ".info div{min-width:150px}.info b{color:#555;font-size:11px;text-transform:uppercase;display:block}";
+  html += ".info span{font-size:15px;font-weight:bold}";
+  html += ".box{background:#f7f7f7;padding:12px 15px;border-left:3px solid #ddd;margin:6px 0 12px;white-space:pre-wrap;word-wrap:break-word;font-family:Consolas,monospace;font-size:13px;border-radius:4px}";
+  html += ".btn{display:block;margin:20px auto;padding:14px 30px;background:#059669;color:white;border:none;border-radius:8px;font-size:16px;font-weight:bold;cursor:pointer}";
+  html += ".kasus{background:#ecfdf5;padding:12px 15px;border-radius:6px;margin:10px 0 16px;font-size:14px;border-left:4px solid #10b981}";
+  html += ".flowchart-img{max-width:100%;border:2px solid #ddd;border-radius:6px;margin:12px 0}";
+  html += "@media print{.btn{display:none}body{margin:0;padding:20px}.flowchart-img{page-break-inside:avoid}}";
+  html += "</style></head><body>";
+  html += "<button class='btn' onclick='window.print()'>🖨️ Cetak / Simpan PDF</button>";
+  html += "<h1>LKPD — Pertemuan 1 (Kasus 2): Pengecekan Pengumpulan Tugas</h1>";
+  html += "<div class='info'>";
+  html += "<div><b>Nama</b><span>" + esc(id.nama || "-") + "</span></div>";
+  html += "<div><b>Kelas</b><span>" + esc(id.kelas || "-") + "</span></div>";
+  html += "<div><b>Absen</b><span>" + esc(id.absen || "-") + "</span></div>";
+  html += "</div>";
+  html += "<div class='kasus'><b>Studi Kasus:</b> Pengecekan Pengumpulan Tugas Proyek KKA</div>";
+
+  html += "<h2>Aktivitas 1 — Memahami Masalah</h2>";
+  html += "<h3>Apa yang menjadi input?</h3><div class='box'>" + esc(val("l2-input")) + "</div>";
+  html += "<h3>Apa proses utama yang dilakukan?</h3><div class='box'>" + esc(val("l2-proses")) + "</div>";
+  html += "<h3>Apa yang menjadi output?</h3><div class='box'>" + esc(val("l2-output")) + "</div>";
+  html += "<h3>Kapan proses pengecekan berhenti?</h3><div class='box'>" + esc(val("l2-stop")) + "</div>";
+  html += "<h3>Apakah ada kondisi yang harus diperiksa?</h3><div class='box'>" + esc(val("l2-kondisi")) + "</div>";
+
+  html += "<h2>Aktivitas 2 — Notasi Deskriptif</h2>";
+  html += "<h3>Judul: Algoritma Pengecekan Pengumpulan Tugas</h3>";
+  html += "<div class='box'>" + esc(val("l2-deskriptif")) + "</div>";
+
+  html += "<h2>Aktivitas 3 — Flowchart</h2>";
+  if (flowchartImg) {
+    html += "<p style='color:#666;font-size:13px;font-style:italic'>Flowchart yang kamu rangkai di playground:</p>";
+    html += "<img src='" + flowchartImg + "' class='flowchart-img' alt='Flowchart'>";
+  } else {
+    html += "<p style='color:#999;font-size:13px;font-style:italic'>(Flowchart belum dibuat di playground)</p>";
+  }
+  html += "<h3>Deskripsi Flowchart</h3>";
+  html += "<div class='box'>" + esc(val("l2-deskripsi")) + "</div>";
+  html += "<p style='margin-top:30px;text-align:center;color:#888;font-size:12px'>Dicetak: " + new Date().toLocaleString("id-ID") + " - RuangInformatika</p>";
 
   const w = window.open("", "_blank");
   if (!w) { alert("Izinkan pop-up untuk mengunduh LKPD."); return; }
