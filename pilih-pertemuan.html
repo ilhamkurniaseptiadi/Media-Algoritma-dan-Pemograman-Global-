@@ -160,32 +160,35 @@ tailwind.config = { theme: { extend: {
         </div>
       </a>
 
-      <!-- PERTEMUAN 4 — LOCKED -->
-      <div class="card-pertemuan card-locked block bg-gradient-to-br from-amber-500/5 via-brandGray to-brandGray border-2 border-amber-500/20 rounded-3xl p-6 md:p-7 fade-in-up" style="animation-delay:.25s">
+      <!-- PERTEMUAN 4 – AKTIF -->
+      <a href="pertemuan-4.html" class="card-pertemuan group block bg-gradient-to-br from-sky-500/15 via-brandGray to-brandGray border-2 border-sky-500/40 rounded-3xl p-6 md:p-7 hover:border-sky-500/70 fade-in-up" style="animation-delay:.25s" onmousemove="moveGlow(event,this)">
         <div class="flex items-start justify-between mb-4">
-          <div class="w-16 h-16 rounded-2xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center">
-            <span class="text-2xl font-extrabold text-amber-400/60">04</span>
+          <div class="w-16 h-16 rounded-2xl bg-sky-500/15 border border-sky-500/30 flex items-center justify-center">
+            <span class="text-2xl font-extrabold text-sky-400">04</span>
           </div>
           <div class="flex flex-col items-end gap-1">
-            <span class="text-[10px] font-bold text-amber-400/70 bg-amber-500/10 border border-amber-500/20 px-3 py-1 rounded-full uppercase tracking-widest">
-              <i class="fa-solid fa-lock text-[8px] mr-1"></i> Segera
+            <span class="text-[10px] font-bold text-sky-400 bg-sky-500/15 border border-sky-500/30 px-3 py-1 rounded-full uppercase tracking-widest">
+              <i class="fa-solid fa-circle text-[6px] mr-1 animate-pulse"></i> Siap
             </span>
             <span class="text-[10px] font-mono text-textGray">2 JP</span>
           </div>
         </div>
-        <h3 class="text-xl md:text-2xl font-bold text-white/70 mb-2">Pertemuan 4</h3>
-        <p class="text-xs text-amber-400/70 font-bold uppercase tracking-wider mb-3">Jenis Algoritma: Searching &amp; Sorting</p>
+        <h3 class="text-xl md:text-2xl font-bold text-white mb-2">Pertemuan 4</h3>
+        <p class="text-xs text-sky-400 font-bold uppercase tracking-wider mb-3">Pengenalan IDE &amp; Python Pertama (TaRL)</p>
         <p class="text-sm text-textGray leading-relaxed mb-5">
-          Algoritma pencarian (linear, binary) dan pengurutan (bubble sort, selection sort).
+          Lingkungan kerja VS Code, ekstensi Python, dan penulisan kode pertama berbasis diferensiasi kemampuan siswa (TaRL).
         </p>
         <div class="flex flex-wrap gap-2 mb-5">
-          <span class="text-[10px] font-bold bg-white/5 border border-white/10 text-textGray px-2.5 py-1 rounded-full"><i class="fa-solid fa-magnifying-glass mr-1 text-amber-400"></i>Searching</span>
-          <span class="text-[10px] font-bold bg-white/5 border border-white/10 text-textGray px-2.5 py-1 rounded-full"><i class="fa-solid fa-sort mr-1 text-amber-400"></i>Sorting</span>
+          <span class="text-[10px] font-bold bg-white/5 border border-white/10 text-textGray px-2.5 py-1 rounded-full"><i class="fa-solid fa-compass mr-1 text-sky-400"></i>Pre-Test TaRL</span>
+          <span class="text-[10px] font-bold bg-white/5 border border-white/10 text-textGray px-2.5 py-1 rounded-full"><i class="fa-solid fa-desktop mr-1 text-sky-400"></i>VS Code</span>
+          <span class="text-[10px] font-bold bg-white/5 border border-white/10 text-textGray px-2.5 py-1 rounded-full"><i class="fa-brands fa-python mr-1 text-amber-400"></i>Python</span>
+          <span class="text-[10px] font-bold bg-white/5 border border-white/10 text-textGray px-2.5 py-1 rounded-full"><i class="fa-solid fa-pen-ruler mr-1 text-purple-400"></i>LKPD 3 Jalur</span>
+          <span class="text-[10px] font-bold bg-white/5 border border-white/10 text-textGray px-2.5 py-1 rounded-full"><i class="fa-solid fa-terminal mr-1 text-emerald-400"></i>Mini IDE</span>
         </div>
-        <div class="flex items-center gap-2 text-sm font-bold text-textGray/60">
-          <i class="fa-solid fa-lock"></i> Belum tersedia
+        <div class="flex items-center gap-2 text-sm font-bold text-sky-400 group-hover:gap-4 transition-all">
+          Mulai Pertemuan 4 <i class="fa-solid fa-arrow-right"></i>
         </div>
-      </div>
+      </a>
 
     </div>
 
@@ -210,7 +213,7 @@ tailwind.config = { theme: { extend: {
 <!-- FOOTER -->
 <footer class="border-t border-white/5 bg-[#080808] mt-auto">
   <div class="max-w-6xl mx-auto px-6 py-6 text-center text-sm text-textGray">
-    © 2026 RuangInformatika • Algoritma &amp; Pemrograman Dasar
+    &copy; 2026 RuangInformatika &bull; Algoritma &amp; Pemrograman Dasar
   </div>
 </footer>
 
